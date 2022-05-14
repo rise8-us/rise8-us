@@ -1,0 +1,25 @@
+site_name: Engineering
+site_url: https://engineering.rise8.us
+nav:
+  - Home: index.md
+  - Practice Playbook: practice-playbook.md
+  - Company: https://rise8.us
+theme:
+  name: material
+  logo: https://rise8.us/wp-content/uploads/2021/05/site-icon-white.svg
+  favicon: https://rise8.us/wp-content/uploads/2021/05/cropped-rise8-favicon-32x32.png
+  palette:
+    primary: black
+    accent: red
+extra_css:
+  - stylesheets/extra.css
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+
+
