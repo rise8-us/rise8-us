@@ -6,8 +6,8 @@ nav:
   - Company: https://rise8.us
 theme:
   name: material
-  logo: https://rise8.us/wp-content/uploads/2021/05/site-icon-white.svg
-  favicon: https://rise8.us/wp-content/uploads/2021/05/cropped-rise8-favicon-32x32.png
+  logo: https://rise8.us/images/logo-rise8.svg
+  favicon: https://rise8.us/images/favicons/cropped-rise8-favicon-32x32.png
   palette:
     primary: black
     accent: red
