@@ -1,0 +1,1164 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://engineering.rise8.us/practice-playbook/">
+      
+      <link rel="icon" href="https://rise8.us/images/favicons/cropped-rise8-favicon-32x32.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.7">
+    
+    
+      
+        <title>Practice Playbook - Engineering</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4a0965b7.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="red">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#engineering-practice-playbook" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Engineering" class="md-header__button md-logo" aria-label="Engineering" data-md-component="logo">
+      
+  <img src="https://rise8.us/images/logo-rise8.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Engineering
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Practice Playbook
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Engineering" class="md-nav__button md-logo" aria-label="Engineering" data-md-component="logo">
+      
+  <img src="https://rise8.us/images/logo-rise8.svg" alt="logo">
+
+    </a>
+    Engineering
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Practice Playbook
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Practice Playbook
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#team-composition" class="md-nav__link">
+    Team Composition
+  </a>
+  
+    <nav class="md-nav" aria-label="Team Composition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#engineer" class="md-nav__link">
+    Engineer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#designer" class="md-nav__link">
+    Designer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#product-manager" class="md-nav__link">
+    Product Manager
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#values" class="md-nav__link">
+    Values
+  </a>
+  
+    <nav class="md-nav" aria-label="Values">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#collaboration" class="md-nav__link">
+    Collaboration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trust" class="md-nav__link">
+    Trust
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#courage" class="md-nav__link">
+    Courage
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mission-driven" class="md-nav__link">
+    Mission Driven
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discovery" class="md-nav__link">
+    Discovery
+  </a>
+  
+    <nav class="md-nav" aria-label="Discovery">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#build-vs-buy-analysis" class="md-nav__link">
+    Build vs Buy Analysis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prototypes" class="md-nav__link">
+    Prototypes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#product-planning" class="md-nav__link">
+    Product Planning
+  </a>
+  
+    <nav class="md-nav" aria-label="Product Planning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technical-debt" class="md-nav__link">
+    Technical Debt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#story-point" class="md-nav__link">
+    Story Point
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acceptance-criteria" class="md-nav__link">
+    Acceptance Criteria
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development" class="md-nav__link">
+    Development
+  </a>
+  
+    <nav class="md-nav" aria-label="Development">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technology-stack" class="md-nav__link">
+    Technology Stack
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#continuous-integration" class="md-nav__link">
+    Continuous Integration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing" class="md-nav__link">
+    Testing
+  </a>
+  
+    <nav class="md-nav" aria-label="Testing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unit" class="md-nav__link">
+    Unit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contract-testing" class="md-nav__link">
+    Contract Testing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integration" class="md-nav__link">
+    Integration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#end-to-end-end-to-end" class="md-nav__link">
+    End to End {#end-to-end}
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practices" class="md-nav__link">
+    Practices
+  </a>
+  
+    <nav class="md-nav" aria-label="Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pair-programming" class="md-nav__link">
+    Pair Programming
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-driven-development" class="md-nav__link">
+    Test Driven Development
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-review" class="md-nav__link">
+    Code Review
+  </a>
+  
+    <nav class="md-nav" aria-label="Code Review">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mentoring" class="md-nav__link">
+    Mentoring
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#principles" class="md-nav__link">
+    Principles
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resolving-conflicts" class="md-nav__link">
+    Resolving Conflicts
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modern-applications" class="md-nav__link">
+    Modern Applications
+  </a>
+  
+    <nav class="md-nav" aria-label="Modern Applications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#logging" class="md-nav__link">
+    Logging
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backing-services" class="md-nav__link">
+    Backing Services
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monitoring" class="md-nav__link">
+    Monitoring
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additional-resources" class="md-nav__link">
+    Additional Resources
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recommended-reads" class="md-nav__link">
+    Recommended Reads
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    Notes
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://rise8.us" class="md-nav__link">
+        Company
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#team-composition" class="md-nav__link">
+    Team Composition
+  </a>
+  
+    <nav class="md-nav" aria-label="Team Composition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#engineer" class="md-nav__link">
+    Engineer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#designer" class="md-nav__link">
+    Designer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#product-manager" class="md-nav__link">
+    Product Manager
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#values" class="md-nav__link">
+    Values
+  </a>
+  
+    <nav class="md-nav" aria-label="Values">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#collaboration" class="md-nav__link">
+    Collaboration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trust" class="md-nav__link">
+    Trust
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#courage" class="md-nav__link">
+    Courage
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mission-driven" class="md-nav__link">
+    Mission Driven
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discovery" class="md-nav__link">
+    Discovery
+  </a>
+  
+    <nav class="md-nav" aria-label="Discovery">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#build-vs-buy-analysis" class="md-nav__link">
+    Build vs Buy Analysis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prototypes" class="md-nav__link">
+    Prototypes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#product-planning" class="md-nav__link">
+    Product Planning
+  </a>
+  
+    <nav class="md-nav" aria-label="Product Planning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technical-debt" class="md-nav__link">
+    Technical Debt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#story-point" class="md-nav__link">
+    Story Point
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acceptance-criteria" class="md-nav__link">
+    Acceptance Criteria
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development" class="md-nav__link">
+    Development
+  </a>
+  
+    <nav class="md-nav" aria-label="Development">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technology-stack" class="md-nav__link">
+    Technology Stack
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#continuous-integration" class="md-nav__link">
+    Continuous Integration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing" class="md-nav__link">
+    Testing
+  </a>
+  
+    <nav class="md-nav" aria-label="Testing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unit" class="md-nav__link">
+    Unit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contract-testing" class="md-nav__link">
+    Contract Testing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integration" class="md-nav__link">
+    Integration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#end-to-end-end-to-end" class="md-nav__link">
+    End to End {#end-to-end}
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practices" class="md-nav__link">
+    Practices
+  </a>
+  
+    <nav class="md-nav" aria-label="Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pair-programming" class="md-nav__link">
+    Pair Programming
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-driven-development" class="md-nav__link">
+    Test Driven Development
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-review" class="md-nav__link">
+    Code Review
+  </a>
+  
+    <nav class="md-nav" aria-label="Code Review">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mentoring" class="md-nav__link">
+    Mentoring
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#principles" class="md-nav__link">
+    Principles
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resolving-conflicts" class="md-nav__link">
+    Resolving Conflicts
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modern-applications" class="md-nav__link">
+    Modern Applications
+  </a>
+  
+    <nav class="md-nav" aria-label="Modern Applications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#logging" class="md-nav__link">
+    Logging
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backing-services" class="md-nav__link">
+    Backing Services
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monitoring" class="md-nav__link">
+    Monitoring
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additional-resources" class="md-nav__link">
+    Additional Resources
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recommended-reads" class="md-nav__link">
+    Recommended Reads
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    Notes
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="engineering-practice-playbook">Engineering Practice Playbook</h1>
+<h2 id="team-composition">Team Composition</h2>
+<h3 id="engineer">Engineer</h3>
+<p>The engineer is responsible for the technical delivery of a product to the customer. They focus their time on building a secure, reliable, scalable and maintainable product. The engineer brings a unique perspective to the team as they best understand the amount of work needed to build out features. They also understand the impact technical debt can have on velocity. They work hand in hand with the product manager to buy down risks through backlog prioritization. The engineer also works with the designer to execute a design system as well as tease out technical pain points from the user. The engineer works with operations to optimize product delivery and  support.</p>
+<h3 id="designer">Designer</h3>
+<h3 id="product-manager">Product Manager</h3>
+<h2 id="values">Values</h2>
+<h3 id="collaboration">Collaboration</h3>
+<p>Collaboration improves software delivery performance, organizational performance and job satisfaction<a href="Accelerate">^1</a>. Working with someone to reach a common goal has many benefits to include:</p>
+<ol>
+<li>Opens new communication channels</li>
+<li>Quicker alignment</li>
+<li>Brings unique perspectives and better solutions</li>
+<li>Improves efficiency</li>
+</ol>
+<h3 id="trust">Trust</h3>
+<p>Collaboration improves software delivery performance, organizational performance and job satisfaction<a href="Accelerate">^2</a></p>
+<p>Trust your team is making the best decisions with the information known at the moment, with or without your presence. You and your team have a common goal, there is more than one way to reach it.</p>
+<h3 id="courage">Courage</h3>
+<h3 id="mission-driven">Mission Driven</h3>
+<h2 id="discovery">Discovery</h2>
+<h3 id="build-vs-buy-analysis">Build vs Buy Analysis</h3>
+<p>Engineers can evaluate already existing options to include commercial or government.</p>
+<h3 id="prototypes">Prototypes</h3>
+<p>Engineers can build disposable prototypes in order to burn down any risk and help inform team.</p>
+<h2 id="product-planning">Product Planning</h2>
+<h3 id="technical-debt">Technical Debt</h3>
+<p>Technical debt can be defined as aspects of our code that will slow down future development. Debt can be intentional or unintentional but must be managed. Incurring too much technical debt can lead to a reduction in productivity, maintainability and testability which in turn leads to unhappy employees and decreased organizational performance. Engineers are responsible for making technical debt visible. Here are a few ways to mitigate and manage technical debt in your products:</p>
+<ol>
+<li>Keep a log of debt on your project for future conversations</li>
+<li>Discuss during backlog grooming</li>
+<li>Establish coding and documentation standards</li>
+<li>Familiarize yourself with common design &amp; architecture patterns</li>
+<li>Be aware of new technologies</li>
+</ol>
+<h3 id="story-point">Story Point</h3>
+<p>Engineers can help the team by helping to point stories. They can help estimate the amount or complexity of the work. Since engineers understand the work involved to fulfill a requirement,  they can ensure that stories are granular and right sized.</p>
+<h3 id="acceptance-criteria">Acceptance Criteria</h3>
+<p>Engineers can help the team by reviewing acceptance criteria before the sprint begins. The acceptance criteria should be clear and free of interpretation.</p>
+<h2 id="development">Development</h2>
+<h3 id="technology-stack">Technology Stack</h3>
+<p>Selecting the right technology stack is important. Teams perform better when they have control of the tools and technologies. Here are a few things to consider when selecting tools and technologies:</p>
+<ol>
+<li>Is training necessary?</li>
+<li>Are the skills and knowledge required common, or is the technology very niche?</li>
+<li>Is the technology mature enough to adopt?</li>
+<li>Are there any costs?</li>
+<li>Is there support for the technology within the current continuous integration process?</li>
+<li>Can the technology be deployed to all environments?</li>
+<li>Can the technology be managed in all environments?</li>
+</ol>
+<h3 id="continuous-integration">Continuous Integration</h3>
+<p>Continuous integration is a process that automates aspects of software development.</p>
+<h3 id="testing">Testing</h3>
+<p>Building testing into our products provides us the confidence that we need to quickly deliver new features without the fear of breaking our products. The test pyramid depicts the types of test we can author along with the general distribution.</p>
+<h4 id="unit">Unit</h4>
+<p>The unit test is designed to test a small, singular component. The tests are easy to author and maintain and thus often represent the largest portion of tests within the code.</p>
+<h4 id="contract-testing">Contract Testing</h4>
+<p>TDD for micro service architecture, contracts are written on what will be consumed and then consumers and producers are tested against these contracts.  Eliminates the need for test environments that have all services running and at a specific version.</p>
+<h4 id="integration">Integration</h4>
+<p>The integration test is designed to test between components. A typical example might be integrating with a database or a provided REST service. Integration tests require that you stand up not only your product but also the components with which you integrate. For this reason, they require more time and effort than unit tests. They often times are the second most frequently used test.</p>
+<h4 id="end-to-end-end-to-end">End to End {#end-to-end}</h4>
+<p>The end to end test is designed to test through your stack starting at the front end. The tests require the most time and effort to write and maintain. For this reason, they often represent the smallest portion of your tests.</p>
+<p>For further reading take a look at a the list of curated resources</p>
+<ul>
+<li><a href="https://martinfowler.com/articles/practical-test-pyramid.html">https://martinfowler.com/articles/practical-test-pyramid.html</a></li>
+</ul>
+<h2 id="practices">Practices</h2>
+<p>Ceremonies</p>
+<h3 id="pair-programming">Pair Programming</h3>
+<p>Pair programming is a development technique where two developers author software using the same computer. The computer is outfitted with two keyboards, two monitors and two mice. In a remote environment one user can share the screen with another via collaboration software such as <a href="https://zoom.us/">Zoom</a>. Pair programming has many benefits that include:</p>
+<ol>
+<li>Knowledge sharing (both domain and technical knowledge)</li>
+<li>Immediate code reviews</li>
+<li>Improved interpersonal communication</li>
+<li>Reduction in code defects</li>
+</ol>
+<p>Here are few helpful hints when pairing:</p>
+<ol>
+<li>Pairing can be tiring, take breaks often</li>
+<li>Rotate pairs regularly. Each person brings something unique to the table which will improve the codebase as a whole. Swapping pairs also drives both knowledge sharing and alignment across the team.</li>
+<li>Be open to new ideas and constructive criticism</li>
+<li>Sometimes pairing might not be the best approach. Feel free to solo when it makes sense. But remember, committed code requires a peer review.</li>
+</ol>
+<h3 id="test-driven-development">Test Driven Development</h3>
+<p>Test Driven Development is software development practice. The process starts with authoring a failing test and then implementing the functionality required for the test to succeed. Often times referred to as “Red Green Refactor”, it consists of three distinct steps (red-green-refactor):</p>
+<ol>
+<li>Author a failing test</li>
+<li>Author just enough code for test to pass</li>
+<li>Refactor</li>
+</ol>
+<h3 id="code-review">Code Review</h3>
+<p>The primary purpose of code review is to make sure that the overall code health of the project's codebase is improving over time, and a series of trade-offs have to be balanced.</p>
+<p>First, developers must be able to <em>make progress</em> on their tasks. If you never submit an improvement to the codebase, then the codebase never improves. Also, if a reviewer makes it very difficult for <em>any</em> change to go in, developers are disincentivized to improve in the future.</p>
+<p>Second, the reviewer must ensure that each merge request is of such a quality that their codebase's overall health is not decreasing as time goes on. This can be tricky because codebases degrade through small decreases in code health over time, especially when a team is under significant time constraints and feel that they have to take shortcuts to accomplish their goals.</p>
+<p>A reviewer has ownership and responsibility for the code they are reviewing. They want to ensure that the codebase stays consistent and maintainable.</p>
+<p>Thus, we get the following rule as the standard we expect in code reviews:</p>
+<p>In general, reviewers should favor approving a merge request once it is in a state where it improves the overall code health of the system being worked on, even if the merge request isn't perfect.</p>
+<p>There are limitations to this, of course. For example, if a merge request adds a feature that the reviewer doesn't want in their system, then the reviewer can certainly deny approval even if the code is well-designed.</p>
+<p>A key point here is that there is no such thing as "perfect" code—there is only <em>better</em> code. Reviewers should not require the author to polish every tiny piece of a merge request before approving. Instead, the reviewer should balance out the need to make forward progress compared to the importance of the changes they are suggesting. Instead of seeking perfection, what a reviewer should seek is <em>continuous improvement</em>. A merge request that improves the maintainability, readability and understandability of the system shouldn't be delayed because it isn't "perfect."</p>
+<p>Reviewers should <em>always</em> feel free to leave comments expressing that something could be better, but if it's not very important, prefix it with something like "Nit: "to let the author know that it's just a point of polish that they could choose to ignore (Nit means nit-pick).</p>
+<p>Note: Nothing in this document justifies checking in merge requests that <em>worsen</em> the system's overall code health. The only time you would do that would be in an emergency.</p>
+<h4 id="mentoring">Mentoring</h4>
+<p>Code reviews can be an essential function for teaching developers something new about a language, a framework, or general software design principles. It's always OK to leave comments that help a developer learn something new. Sharing knowledge is part of improving the code health of a system over time. Just keep in mind that if your comment is purely educational but not critical to meeting the standards described in this document, prefix it with "Nit: "or otherwise indicate that the author doesn't need to resolve it in this merge request.</p>
+<h4 id="principles">Principles</h4>
+<ul>
+<li>Technical facts and data overrule opinions and personal preferences.</li>
+<li>On matters of style, the style guide is the absolute authority. Any purely style point (whitespace, etc.) not in the style guide is a personal preference. The style should be consistent with what is there. If there is no previous style, accept the author's style.</li>
+<li>Aspects of software design are seldom a pure style issue or just a personal preference<strong>.</strong> They are based on underlying principles and should be weighed on those principles, not simply by subjective opinion. Sometimes there are a few valid options. If the author can demonstrate (either through data or based on solid engineering principles) that several approaches are equally good, the reviewer should accept the author's preference. Otherwise, the choice is dictated by standard principles of software design.</li>
+<li>If no other rule applies, then the reviewer may ask the author to be consistent with the current codebase, as long as that doesn't worsen the system's overall code health.</li>
+</ul>
+<h4 id="resolving-conflicts">Resolving Conflicts</h4>
+<p>In any conflict on a code review, the first step should always be for the developer and reviewer to reach an agreement.</p>
+<p>When coming to consensus becomes especially difficult, it can help to have a face-to-face meeting or a video conference between the reviewer and the author, instead of just trying to resolve the conflict through code review comments. (If you do this, though, make sure to record the discussion results as a comment on the merge request for future readers.)</p>
+<p>If that doesn't resolve the situation, the most common way to resolve it would be to escalate. Often the escalation path is to a broader team discussion, having a Technical Lead weigh in, asking for a decision from a maintainer of the code, or asking an Eng Manager to help.</p>
+<p>Don't let a merge request sit around because the author and the reviewer can't agree.</p>
+<p><em>This section was derived, with modifications, from <a href="https://github.com/google/eng-practices">Google Engineering Practices Documentation</a></em></p>
+<h2 id="modern-applications">Modern Applications</h2>
+<h3 id="logging">Logging</h3>
+<p>As you ship your application into production you want to make sure that your logs can be processed and aggregated easily. Designing your application in this fashion will allow the platform to treat all application logs the same. Additionally, it allows for providing a base set of services your organization will need to support and operate your application. A few examples include, access to logs for debugging as well as setting up alerts for monitoring. The standard practice is to write log entries to stdout. For further information, check out the  <a href="https://12factor.net/logs">logs</a> section on <a href="https://12factor.net/">12factor.net</a></p>
+<h3 id="configuration">Configuration</h3>
+<p>Your application will exist in numerous environments including development, staging and production. For this reason, it is important that your application can be configured easily. Keep in mind that your application is likely to end up on a platform like Kubernetes where managing the lifecycle of an application is important. The standard practice is to expose configuration via granular environment variables. The configuration defines a contract with the tools that manages your application’s lifetime. For further information, check out the <a href="https://12factor.net/config">config</a> section on <a href="https://12factor.net/">12factor.net</a></p>
+<h3 id="backing-services">Backing Services</h3>
+<p>As you build out your application, there will be a set of services you wish to consume. You should consider what services are needed and if they are provided as part of the platform offering. Configuring these services is as simple as adding environment variables to your configuration (see above). Listed below are common services:</p>
+<ol>
+<li>Identity Management (ie Keycloak)</li>
+<li>Databases (ie Relational, NoSQL)</li>
+<li>Storage (ie S3, Minio, Volumes)</li>
+<li>Message Queues (ie RabbitMQ, Kafka)</li>
+<li>Email (ie SMTP)</li>
+</ol>
+<h3 id="monitoring">Monitoring</h3>
+<p>Monitoring your application will help you be successful. Monitoring can help you understand how your application is being used and by whom. Monitoring can help you understand whether your application is functioning. When you start building your application consider the following:</p>
+<ol>
+<li>Are health endpoints available in my application? What engineering aspects should be part of the health endpoint? How are the health endpoints monitored?</li>
+<li>Are there important product metrics to capture? Are there any technologies available to support metrics collection (ie Elasticsearch, Kibana, Grafana)?</li>
+<li>Are there technologies available to support alerting?</li>
+</ol>
+<h3 id="additional-resources">Additional Resources</h3>
+<ul>
+<li><a href="https://12factor.net/">https://12factor.net</a></li>
+</ul>
+<h3 id="recommended-reads">Recommended Reads</h3>
+<ul>
+<li><a href="https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882">Clean Code by Robert C. Martin</a></li>
+<li><a href="https://www.amazon.com/Composing-Software-Exploration-Programming-Composition/dp/1661212565">Composing Software by Eric Elliot</a></li>
+<li><a href="https://www.amazon.com/Design-Patterns-Object-Oriented-Addison-Wesley-Professional-ebook/dp/B000SEIBB8">Design Patterns by Gang of Four</a></li>
+<li><a href="https://www.amazon.com/Pragmatic-Programmer-Anniversary-Journey-Mastery/dp/B0833FBNHV/ref=sr_1_1?dchild=1&amp;gclid=Cj0KCQiAst2BBhDJARIsAGo2ldUUR4IfnxCjch0ni9ici1HmmtCYjITL9ghoHWfJRZJjlTOXIRdR5DEaAiXrEALw_wcB&amp;hvadid=241894030769&amp;hvdev=c&amp;hvlocphy=9008585&amp;hvnetw=g&amp;hvqmt=e&amp;hvrand=15887975436101901235&amp;hvtargid=kwd-131403882&amp;hydadcr=16400_10303601&amp;keywords=pragmatic+programmer&amp;qid=1614290816&amp;sr=8-1&amp;tag=googhydr-20">Pragmatic Programmer</a></li>
+<li><a href="https://www.oreilly.com/library/view/building-event-driven-microservices/9781492057888/">Event-Driven Microservices</a></li>
+</ul>
+<!-- Footnotes themselves at the bottom. -->
+<h2 id="notes">Notes</h2>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Home
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.0238f547.min.js"></script>
+      
+    
+  </body>
+</html>

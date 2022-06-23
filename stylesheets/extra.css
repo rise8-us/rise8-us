@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Telegraf";
+  src: url("https://rise8.us/fonts/Telegraf-Regular.otf") format("woff2");
+}
+
+:root {
+  --md-text-font: "Telegraf", sans-serif;
+}
