@@ -1,56 +1,43 @@
 # Engineering Practice Playbook
 
-## Team Composition
+## What is an Engineer?
+
+An engineer on a balanced team is responsible for the technical delivery of a product to the customer. They focus their time on building a secure, reliable, scalable, and maintainable product. The engineer brings a unique perspective to the team as they best understand the amount of work needed to build features. They also understand the impact technical debt can have on velocity. They work hand in hand with the product manager to buy down risks through backlog prioritization. The engineer also works with the designer to execute a design system and tease out technical pain points from the user. The engineer works with operations to optimize product delivery and support.
+
+A Balanced Team is:
+
+“A team management philosophy that has people with a variety of skills and perspectives that support each other towards a shared goal.” - balancedteam.org
 
 
-### Engineer
+## Principles
+**Agile Manifesto Principles**
+1. Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.
+2. Welcome changing requirements, even late in development. Agile processes harness change for the customer’s competitive advantage.
+3. Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.
+4. Business people and developers must work together daily throughout the project.
+5. Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done.
+6. The most efficient and effective method of conveying information to and within a development team is face-to-face conversation.
+7. Working software is the primary measure of progress.
+8. Agile processes promote sustainable development. The sponsors, developers, and users should be able to maintain a constant pace indefinitely.
+9. Continuous attention to technical excellence and good design enhances agility.
+10. Simplicity – the art of maximizing the amount of work not done – is essential.
+11. The best architectures, requirements, and designs emerge from self-organizing teams.
+12. At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.
 
-The engineer is responsible for the technical delivery of a product to the customer. They focus their time on building a secure, reliable, scalable and maintainable product. The engineer brings a unique perspective to the team as they best understand the amount of work needed to build out features. They also understand the impact technical debt can have on velocity. They work hand in hand with the product manager to buy down risks through backlog prioritization. The engineer also works with the designer to execute a design system as well as tease out technical pain points from the user. The engineer works with operations to optimize product delivery and  support.
+  ### Trust
 
-
-### Designer
-
-
-### Product Manager
-
-
-## Values
-
-
-### Collaboration
-
-Collaboration improves software delivery performance, organizational performance and job satisfaction[^1]. Working with someone to reach a common goal has many benefits to include:
-
-
-
-1. Opens new communication channels
-2. Quicker alignment
-3. Brings unique perspectives and better solutions
-4. Improves efficiency
-
-
-### Trust
-
-Collaboration improves software delivery performance, organizational performance and job satisfaction[^2]
+Trust allows agile teams to communicate quickly and respond rapidly to changes as they emerge. Without sufficient trust, team members can waste effort and energy hoarding information, forming cliques, dodging blame, and covering their tracks.
 
 Trust your team is making the best decisions with the information known at the moment, with or without your presence. You and your team have a common goal, there is more than one way to reach it.
 
-
-### Courage
-
-
-### Mission Driven
-
-
 ## Discovery
 
-
-### Build vs Buy Analysis
+  ### Build vs Buy Analysis
 
 Engineers can evaluate already existing options to include commercial or government.
 
 
-### Prototypes
+  ### Prototypes
 
 Engineers can build disposable prototypes in order to burn down any risk and help inform team.
 
