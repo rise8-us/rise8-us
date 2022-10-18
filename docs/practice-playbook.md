@@ -9,7 +9,7 @@ A Balanced Team is:
 “A team management philosophy that has people with a variety of skills and perspectives that support each other towards a shared goal.” - balancedteam.org
 
 
-## Principles
+## Foundation
 **Agile Manifesto Principles**
 1. Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.
 2. Welcome changing requirements, even late in development. Agile processes harness change for the customer’s competitive advantage.
@@ -24,11 +24,14 @@ A Balanced Team is:
 11. The best architectures, requirements, and designs emerge from self-organizing teams.
 12. At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.
 
-  ### Trust
+  ### Rise8 Takes
 
-Trust allows agile teams to communicate quickly and respond rapidly to changes as they emerge. Without sufficient trust, team members can waste effort and energy hoarding information, forming cliques, dodging blame, and covering their tracks.
+- Enablement is a primary skillset we practice here at Ride8. Not only building the product but helping build the team's skillset to continue product development.
+- Pair engineers with projects they love.
+- Offer oppertunities for engineers to grow and expand.
+- Trust allows agile teams to communicate quickly and respond rapidly to changes as they emerge. Without sufficient trust, team members can waste effort and energy hoarding information, forming cliques, dodging blame, and covering their tracks.
+  - Trust your team is making the best decisions with the information known at the moment, with or without your presence. You and your team have a common goal, there is more than one way to reach it.
 
-Trust your team is making the best decisions with the information known at the moment, with or without your presence. You and your team have a common goal, there is more than one way to reach it.
 
 ## Discovery
 
@@ -194,7 +197,7 @@ Code reviews can be an essential function for teaching developers something new 
 
 #### Principles
 
-
+// TODO: Move up
 
 * Technical facts and data overrule opinions and personal preferences.
 * On matters of style, the style guide is the absolute authority. Any purely style point (whitespace, etc.) not in the style guide is a personal preference. The style should be consistent with what is there. If there is no previous style, accept the author's style.
