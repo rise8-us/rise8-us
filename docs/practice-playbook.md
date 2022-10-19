@@ -26,28 +26,56 @@ A Balanced Team is:
 
   ### Rise8 Takes
 
-- Enablement is a primary skillset we practice here at Ride8. Not only building the product but helping build the team's skillset to continue product development.
+- Enablement is a primary skillset we practice here at Rise8. Not only building the product but helping build the team's skillset to continue product development.
 - Pair engineers with projects they love.
-- Offer oppertunities for engineers to grow and expand.
+- Offer opportunities for engineers to grow and expand.
 - Trust allows agile teams to communicate quickly and respond rapidly to changes as they emerge. Without sufficient trust, team members can waste effort and energy hoarding information, forming cliques, dodging blame, and covering their tracks.
   - Trust your team is making the best decisions with the information known at the moment, with or without your presence. You and your team have a common goal, there is more than one way to reach it.
+- Technical facts and data overrule opinions and personal preferences.
+- Use best practices and design patterns unless justified.
+- Adheres to the team's code contract for styling.
 
 
 ## Discovery
 
   ### Build vs Buy Analysis
 
-Engineers can evaluate already existing options to include commercial or government.
+Engineers evaluate already existing options to include commercial or government.
 
+TODO: Separate into groups (Build & Purchase/Use)
+
+
+- Is there an offering that sufficently meets the team's requirements
+- Build, operate, maintain, and upgrade cost Vs buy and licensing cost?
+- Do we have the expertise to build?
+- What is the learning curve/developer experience of the commercial products?
+- Security requirements?
+- Will new features be required, can they be added to the buy option?
+- How much granular control of the system is necessary?
+- Will the buy/FOSS option be maintained longterm
+- Is the offering well documented/provide a satisfactory user experience?
+- Time to market?
 
   ### Prototypes
 
-Engineers can build disposable prototypes in order to burn down any risk and help inform team.
+Build disposable prototypes in order to burn down risk and help inform team.
+
+What types of Prototypes?
+  - UI Mocks (Figjam)
+  - operational Api
+
+What types of outcomes/information should the prototype produce?
+  - Technical discovery
+  - User needs
+
+- How long should we spend?
+- Should we use best practices when building a working prototype?
+- Who is the team we are referring to here?
 
 
-## Product Planning
+## Systems Design and Architecture
 
-
+### Architectural Drawings
 ### Technical Debt
 
 Technical debt can be defined as aspects of our code that will slow down future development. Debt can be intentional or unintentional but must be managed. Incurring too much technical debt can lead to a reduction in productivity, maintainability and testability which in turn leads to unhappy employees and decreased organizational performance. Engineers are responsible for making technical debt visible. Here are a few ways to mitigate and manage technical debt in your products:
@@ -59,12 +87,6 @@ Technical debt can be defined as aspects of our code that will slow down future 
 3. Establish coding and documentation standards
 4. Familiarize yourself with common design & architecture patterns
 5. Be aware of new technologies
-
-
-### Story Point
-
-Engineers can help the team by helping to point stories. They can help estimate the amount or complexity of the work. Since engineers understand the work involved to fulfill a requirement,  they can ensure that stories are granular and right sized.
-
 
 ### Acceptance Criteria
 
@@ -129,6 +151,9 @@ For further reading take a look at a the list of curated resources
 
 Ceremonies
 
+### Story Point
+
+Engineers can help the team by helping to point stories. They can help estimate the amount or complexity of the work. Since engineers understand the work involved to fulfill a requirement,  they can ensure that stories are granular and right sized.
 
 ### Pair Programming
 
@@ -189,20 +214,13 @@ Reviewers should _always_ feel free to leave comments expressing that something 
 
 Note: Nothing in this document justifies checking in merge requests that _worsen_ the system's overall code health. The only time you would do that would be in an emergency.
 
+- Aspects of software design are seldom a pure style issue or just a personal preference**.** They are based on underlying principles and should be weighed on those principles, not simply by subjective opinion. Sometimes there are a few valid options. If the author can demonstrate (either through data or based on solid engineering principles) that several approaches are equally good, the reviewer should accept the author's preference. Otherwise, the choice is dictated by standard principles of software design.
+- If no other rule applies, then the reviewer may ask the author to be consistent with the current codebase, as long as that doesn't worsen the system's overall code health.
+- On matters of style, the style guide is the absolute authority. Any purely style point (whitespace, etc.) not in the style guide is a personal preference. The style should be consistent with what is there. If there is no previous style, accept the author's style.
 
 #### Mentoring
 
 Code reviews can be an essential function for teaching developers something new about a language, a framework, or general software design principles. It's always OK to leave comments that help a developer learn something new. Sharing knowledge is part of improving the code health of a system over time. Just keep in mind that if your comment is purely educational but not critical to meeting the standards described in this document, prefix it with "Nit: "or otherwise indicate that the author doesn't need to resolve it in this merge request.
-
-
-#### Principles
-
-// TODO: Move up
-
-* Technical facts and data overrule opinions and personal preferences.
-* On matters of style, the style guide is the absolute authority. Any purely style point (whitespace, etc.) not in the style guide is a personal preference. The style should be consistent with what is there. If there is no previous style, accept the author's style.
-* Aspects of software design are seldom a pure style issue or just a personal preference**.** They are based on underlying principles and should be weighed on those principles, not simply by subjective opinion. Sometimes there are a few valid options. If the author can demonstrate (either through data or based on solid engineering principles) that several approaches are equally good, the reviewer should accept the author's preference. Otherwise, the choice is dictated by standard principles of software design.
-* If no other rule applies, then the reviewer may ask the author to be consistent with the current codebase, as long as that doesn't worsen the system's overall code health.
 
 
 #### Resolving Conflicts
