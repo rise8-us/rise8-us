@@ -60,22 +60,33 @@ TODO: Separate into groups (Build & Purchase/Use)
 
 Build disposable prototypes in order to burn down risk and help inform team.
 
+The goal of a prototype is for quick applied Technical Discovery/Proof of Concept to learn infomation to empower a decision making.
+
 What types of Prototypes?
-  - UI Mocks (Figjam)
-  - operational Api
+  - Technical Discovery
+  - Proof of Concept
 
 What types of outcomes/information should the prototype produce?
   - Technical discovery
-  - User needs
+  - User traction/Customer feedback
 
-- How long should we spend?
 - Should we use best practices when building a working prototype?
-- Who is the team we are referring to here?
-
+  - Lean
+  - Incremental
+  - Simple
 
 ## Systems Design and Architecture
 
-### Architectural Drawings
+### Architecture - Marshall/JB
+
+### Domain Driven Design
+
+### Design Patterns
+
+### Supplemental Materials
+- Security requirements - full process architecture diagram
+
+
 ### Technical Debt
 
 Technical debt can be defined as aspects of our code that will slow down future development. Debt can be intentional or unintentional but must be managed. Incurring too much technical debt can lead to a reduction in productivity, maintainability and testability which in turn leads to unhappy employees and decreased organizational performance. Engineers are responsible for making technical debt visible. Here are a few ways to mitigate and manage technical debt in your products:
@@ -99,8 +110,6 @@ Engineers can help the team by reviewing acceptance criteria before the sprint b
 ### Technology Stack
 
 Selecting the right technology stack is important. Teams perform better when they have control of the tools and technologies. Here are a few things to consider when selecting tools and technologies:
-
-
 
 1. Is training necessary?
 2. Are the skills and knowledge required common, or is the technology very niche?
