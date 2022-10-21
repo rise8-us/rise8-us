@@ -56,24 +56,41 @@ TODO: Separate into groups (Build & Purchase/Use)
 - Is the offering well documented/provide a satisfactory user experience?
 - Time to market?
 
-  ### Prototypes
+## Building an MVP
+---
 
-Build disposable prototypes in order to burn down risk and help inform team.
+Proof of Concept >> Prototype >> MVP
 
-The goal of a prototype is for quick applied Technical Discovery/Proof of Concept to learn infomation to empower a decision making.
+  ### Proof of Concept
 
-What types of Prototypes?
-  - Technical Discovery
-  - Proof of Concept
+  The goal of a Proof of Concept is for quick applied Technical Discovery to learn information to empower decision making. It can be comprised of pseudo-code, code-fragments, and/or diagrams that depict how the systems communicate. Outcome should be to validate & verify if feasible to accomplish, becomes the reference to for the prototype.
 
-What types of outcomes/information should the prototype produce?
+  Should we use best practices when building a proof of concept?
+  - Not required, but encouraged
+  - Use as needed to explain the proposed concept
+
+  ### Prototype
+
+  The goal of a Prototype is to demo limited functionality to end users in an ideal/sandbox environment and help teams evaluate risk. This becomes a candidate for the initial MVP. Code should follow best practices unless it would be a severe time sync to implement.
+
+  Should we use best practices when building a prototype?
+  - Should try to use best practices, unless severe time sink
+
+  What types of outcomes/information should the prototype produce?
   - Technical discovery
   - User traction/Customer feedback
 
-- Should we use best practices when building a working prototype?
-  - Lean
-  - Incremental
-  - Simple
+  ### MVP
+
+  An MVP builds off of a Prototype to add in further functionality and error handling, and integrate with a production environment.
+
+  What defines an MVP?
+  - Full functionality
+  - Meets all acceptance criteria
+
+  Should we use best practices when building an MVP?
+  - Best practices are standardized and required
+
 
 ## Systems Design and Architecture
 
