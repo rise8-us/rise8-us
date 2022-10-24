@@ -108,8 +108,6 @@ Proof of Concept >> Prototype >> MVP
 
 Technical debt can be defined as aspects of our code that will slow down future development. Debt can be intentional or unintentional but must be managed. Incurring too much technical debt can lead to a reduction in productivity, maintainability and testability which in turn leads to unhappy employees and decreased organizational performance. Engineers are responsible for making technical debt visible. Here are a few ways to mitigate and manage technical debt in your products:
 
-
-
 1. Keep a log of debt on your project for future conversations
 2. Discuss during backlog grooming
 3. Establish coding and documentation standards
@@ -128,13 +126,16 @@ Engineers can help the team by reviewing acceptance criteria before the sprint b
 
 Selecting the right technology stack is important. Teams perform better when they have control of the tools and technologies. Here are a few things to consider when selecting tools and technologies:
 
-1. Is training necessary?
+1. Is training necessary? What is the learning curve? How much documentation is available? Is it good documentation?
 2. Are the skills and knowledge required common, or is the technology very niche?
 3. Is the technology mature enough to adopt?
 4. Are there any costs?
 5. Is there support for the technology within the current continuous integration process?
 6. Can the technology be deployed to all environments?
 7. Can the technology be managed in all environments?
+8. Is the technology stack meeting security criteria and project constraints?
+9. Does the technology stack performance, reliability, and maintainability satisfy the product's requirements?
+10. Can the technology stack scale?
 
 
 ### Continuous Integration
