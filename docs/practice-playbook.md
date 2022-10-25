@@ -138,12 +138,26 @@ Selecting the right technology stack is important. Teams perform better when the
 10. Can the technology stack scale?
 
 
+### CI/CD Pipeline
+
 ### Continuous Integration
 
-Continuous integration is a process that automates aspects of software development.
+Continuous Integration (CI) is a process that automates aspects of software development. We believe CI is non-negotiable and must begin at the initial conception of development to ensure comprehensive software security, testing, and fast feedback on the master branch health. CI ensures that the main branch is always in a state that can be deployed to users by giving developers the ability to react quickly to changes made to the main branch. Furthermore it empowers the ability of the team to hold to agile practices.
 
 
-### Testing
+### Continuous Delivery
+
+Continuous Delivery (CDE) is the practice of packaging software into a deployable state any time the mainline branch changes.
+
+
+### Continuous Deployment
+
+Continuous Deployment (CD) is a process that automates the software deployment process.
+
+CD is intimately related to CI in that it is enabled by CI and is similarly non-negotable. 
+
+
+## Testing
 
 Building testing into our products provides us the confidence that we need to quickly deliver new features without the fear of breaking our products. The test pyramid depicts the types of test we can author along with the general distribution.
 
