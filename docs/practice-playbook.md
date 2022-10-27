@@ -1,6 +1,7 @@
 # Engineering Practice Playbook
 
 ## What is an Engineer?
+---
 
 An engineer on a balanced team is responsible for the technical delivery of a product to the customer. They focus their time on building a secure, reliable, scalable, and maintainable product. The engineer brings a unique perspective to the team as they best understand the amount of work needed to build features. They also understand the impact technical debt can have on velocity. They work hand in hand with the product manager to buy down risks through backlog prioritization. The engineer also works with the designer to execute a design system and tease out technical pain points from the user. The engineer works with operations to optimize product delivery and support.
 
@@ -37,7 +38,7 @@ A Balanced Team is:
 
 
 ## Discovery
-
+---
   ### Build vs Buy Analysis
 
 Engineers evaluate already existing options to include commercial or government.
@@ -55,6 +56,27 @@ TODO: Separate into groups (Build & Purchase/Use)
 - Will the buy/FOSS option be maintained longterm
 - Is the offering well documented/provide a satisfactory user experience?
 - Time to market?
+
+
+  ### Technology Stack
+
+**We choose the right Tech stack for the problem space.**
+
+**Here are a few things to consider when selecting tools and technologies**
+1. Is training necessary? What is the learning curve? How much documentation is available? Is it good documentation?
+1. Are the skills and knowledge required common, or is the technology very niche?
+1. Is the technology mature enough to adopt?
+1. What are the costs?
+  - compute cost of a low level language
+  - engineering wage difference between one language to another
+  - tooling
+1. Is there support for the technology within the current continuous integration process?
+1. Can the technology be deployed to all environments?
+1. Can the technology be managed in all environments?
+1. Is the technology stack meeting security criteria and project constraints?
+1. Does the technology stack performance, reliability, and maintainability satisfy the product's requirements?
+1. Can the technology stack scale?
+
 
 ## Building an MVP
 ---
@@ -93,10 +115,39 @@ Proof of Concept >> Prototype >> MVP
 
 
 ## Systems Design and Architecture
+---
 
 ### Architecture - Marshall/JB
 
+**[Example](https://playbook.obvious.in/2f06a1c7eaa542098251719a1f083d54)**  
+*We will keep a collection of records for "architecturally significant" decisions: those that affect the structure, non-functional characteristics, dependencies, interfaces, or construction techniques.
+
+An architecture decision record is a short text file in a format similar to an Alexandrian pattern. (Though the decisions themselves are not necessarily patterns, they share the characteristic balancing of forces.) Each record describes a set of forces and a single decision in response to those forces. Note that the decision is the central piece here, so specific forces may appear in multiple ADRs.
+
+We will keep ADRs in the project repository under doc/arch/adr-NNN.md
+
+We should use a lightweight text formatting language like Markdown or Textile.
+
+ADRs will be numbered sequentially and monotonically. Numbers will not be reused.
+
+If a decision is reversed, we will keep the old one around, but mark it as superseded. (It's still relevant to know that it was the decision, but is no longer the decision.)
+
+We will use a format with just a few parts, so each document is easy to digest. The format has just a few parts.
+
+Title These documents have names that are short noun phrases. For example, "ADR 1: Deployment on Ruby on Rails 3.0.10" or "ADR 9: LDAP for Multitenant Integration"
+
+Context This section describes the forces at play, including technological, political, social, and project local. These forces are probably in tension, and should be called out as such. The language in this section is value-neutral. It is simply describing facts.
+
+Decision This section describes our response to these forces. It is stated in full sentences, with active voice. "We will ..."
+
+Status A decision may be "proposed" if the project stakeholders haven't agreed with it yet, or "accepted" once it is agreed. If a later ADR changes or reverses a decision, it may be marked as "deprecated" or "superseded" with a reference to its replacement.
+
+Consequences This section describes the resulting context, after applying the decision. All consequences should be listed here, not just the "positive" ones. A particular decision may have positive, negative, and neutral consequences, but all of them affect the team and project in the future.
+
+The whole document should be one or two pages long. We will write each ADR as if it is a conversation with a future developer. This requires good writing style, with full sentences organized into paragraphs. Bullets are acceptable only for visual style, not as an excuse for writing sentence fragments. (Bullets kill people, even PowerPoint bullets.)*
+
 ### Domain Driven Design
+
 
 ### Design Patterns
 
@@ -120,44 +171,21 @@ Engineers can help the team by reviewing acceptance criteria before the sprint b
 
 
 ## Development
-
-
-### Technology Stack
-
-Selecting the right technology stack is important. Teams perform better when they have control of the tools and technologies. Here are a few things to consider when selecting tools and technologies:
-
-1. Is training necessary? What is the learning curve? How much documentation is available? Is it good documentation?
-2. Are the skills and knowledge required common, or is the technology very niche?
-3. Is the technology mature enough to adopt?
-4. Are there any costs?
-5. Is there support for the technology within the current continuous integration process?
-6. Can the technology be deployed to all environments?
-7. Can the technology be managed in all environments?
-8. Is the technology stack meeting security criteria and project constraints?
-9. Does the technology stack performance, reliability, and maintainability satisfy the product's requirements?
-10. Can the technology stack scale?
-
+---
 
 ### CI/CD Pipeline
 
 ### Continuous Integration
 
-Continuous Integration (CI) is a process that automates aspects of software development. We believe CI is non-negotiable and must begin at the initial conception of development to ensure comprehensive software security, testing, and fast feedback on the master branch health. CI ensures that the main branch is always in a state that can be deployed to users by giving developers the ability to react quickly to changes made to the main branch. Furthermore it empowers the ability of the team to hold to agile practices.
+We believe CI is non-negotiable and must begin at the initial conception of development to ensure comprehensive software security, testing, and fast feedback on the main branch health. Furthermore it empowers the ability of the team to hold to agile practices.
 
 
 ### Continuous Delivery
 
-Continuous Delivery (CDE) is the practice of packaging software into a deployable state any time the mainline branch changes.
-
-
-### Continuous Deployment
-
-Continuous Deployment (CD) is a process that automates the software deployment process.
-
-CD is intimately related to CI in that it is enabled by CI and is similarly non-negotable. 
-
+We believe that any merge to main should be able to deploy to production. Merges should be self-contained and not dependant upon another branch.
 
 ## Testing
+---
 
 Building testing into our products provides us the confidence that we need to quickly deliver new features without the fear of breaking our products. The test pyramid depicts the types of test we can author along with the general distribution.
 
@@ -189,6 +217,7 @@ For further reading take a look at a the list of curated resources
 
 
 ## Practices
+---
 
 Ceremonies
 
