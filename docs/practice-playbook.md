@@ -5,27 +5,25 @@
 
 An engineer on a balanced team is responsible for the technical delivery of a product to the customer. They focus their time on building a secure, reliable, scalable, and maintainable product. The engineer brings a unique perspective to the team as they best understand the amount of work needed to build features. They also understand the impact technical debt can have on velocity. They work hand in hand with the product manager to buy down risks through backlog prioritization. The engineer also works with the designer to execute a design system and tease out technical pain points from the user. The engineer works with operations to optimize product delivery and support.
 
-A Balanced Team is:
-
-“A team management philosophy that has people with a variety of skills and perspectives that support each other towards a shared goal.” - balancedteam.org
-
+> “A team management philosophy that has people with a variety of skills and perspectives that support each other towards a shared goal.” - balancedteam.org
 
 ## Foundation
 **Agile Manifesto Principles**
-1. Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.
-2. Welcome changing requirements, even late in development. Agile processes harness change for the customer’s competitive advantage.
-3. Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.
-4. Business people and developers must work together daily throughout the project.
-5. Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done.
-6. The most efficient and effective method of conveying information to and within a development team is face-to-face conversation.
-7. Working software is the primary measure of progress.
-8. Agile processes promote sustainable development. The sponsors, developers, and users should be able to maintain a constant pace indefinitely.
-9. Continuous attention to technical excellence and good design enhances agility.
-10. Simplicity – the art of maximizing the amount of work not done – is essential.
-11. The best architectures, requirements, and designs emerge from self-organizing teams.
-12. At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.
 
-  ### Rise8 Takes
+1. Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.  
+1. Welcome changing requirements, even late in development. Agile processes harness change for the customer’s competitive advantage.
+1. Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.
+1. Business people and developers must work together daily throughout the project.
+1. Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done.
+1. The most efficient and effective method of conveying information to and within a development team is face-to-face conversation.
+1. Working software is the primary measure of progress.
+1. Agile processes promote sustainable development. The sponsors, developers, and users should be able to maintain a constant pace indefinitely.
+1. Continuous attention to technical excellence and good design enhances agility.
+1. Simplicity – the art of maximizing the amount of work not done – is essential.
+1. The best architectures, requirements, and designs emerge from self-organizing teams.
+1. At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.
+
+### Rise8 Takes
 
 - Enablement is a primary skillset we practice here at Rise8. Not only building the product but helping build the team's skillset to continue product development.
 - Pair engineers with projects they love.
@@ -39,7 +37,8 @@ A Balanced Team is:
 
 ## Discovery
 ---
-  ### Build vs Buy Analysis
+
+### Build vs Buy Analysis
 
 Engineers evaluate already existing options to include commercial or government.
 
@@ -58,18 +57,19 @@ TODO: Separate into groups (Build & Purchase/Use)
 - Time to market?
 
 
-  ### Technology Stack
+### Technology Stack
 
 **We choose the right Tech stack for the problem space.**
 
 **Here are a few things to consider when selecting tools and technologies**
+  
 1. Is training necessary? What is the learning curve? How much documentation is available? Is it good documentation?
 1. Are the skills and knowledge required common, or is the technology very niche?
 1. Is the technology mature enough to adopt?
 1. What are the costs?
-  - compute cost of a low level language
-  - engineering wage difference between one language to another
-  - tooling
+    - compute cost of a low level language
+    - engineering wage difference between one language to another
+    - tooling
 1. Is there support for the technology within the current continuous integration process?
 1. Can the technology be deployed to all environments?
 1. Can the technology be managed in all environments?
@@ -83,35 +83,35 @@ TODO: Separate into groups (Build & Purchase/Use)
 
 Proof of Concept >> Prototype >> MVP
 
-  ### Proof of Concept
+### Proof of Concept
 
-  The goal of a Proof of Concept is for quick applied Technical Discovery to learn information to empower decision making. It can be comprised of pseudo-code, code-fragments, and/or diagrams that depict how the systems communicate. Outcome should be to validate & verify if feasible to accomplish, becomes the reference to for the prototype.
+The goal of a Proof of Concept is for quick applied Technical Discovery to learn information to empower decision making. It can be comprised of pseudo-code, code-fragments, and/or diagrams that depict how the systems communicate. Outcome should be to validate & verify if feasible to accomplish, becomes the reference to for the prototype.
 
-  Should we use best practices when building a proof of concept?
+Should we use best practices when building a proof of concept?
   - Not required, but encouraged
   - Use as needed to explain the proposed concept
 
-  ### Prototype
+### Prototype
 
-  The goal of a Prototype is to demo limited functionality to end users in an ideal/sandbox environment and help teams evaluate risk. This becomes a candidate for the initial MVP. Code should follow best practices unless it would be a severe time sync to implement.
+The goal of a Prototype is to demo limited functionality to end users in an ideal/sandbox environment and help teams evaluate risk. This becomes a candidate for the initial MVP. Code should follow best practices unless it would be a severe time sync to implement.
 
-  Should we use best practices when building a prototype?
-  - Should try to use best practices, unless severe time sink
+Should we use best practices when building a prototype?
+- Should try to use best practices, unless severe time sink
 
-  What types of outcomes/information should the prototype produce?
-  - Technical discovery
-  - User traction/Customer feedback
+What types of outcomes/information should the prototype produce?
+- Technical discovery
+- User traction/Customer feedback
 
-  ### MVP
+### MVP
 
-  An MVP builds off of a Prototype to add in further functionality and error handling, and integrate with a production environment.
+An MVP builds off of a Prototype to add in further functionality and error handling, and integrate with a production environment.
 
-  What defines an MVP?
-  - Full functionality
-  - Meets all acceptance criteria
+What defines an MVP?
+- Full functionality
+- Meets all acceptance criteria
 
-  Should we use best practices when building an MVP?
-  - Best practices are standardized and required
+Should we use best practices when building an MVP?
+- Best practices are standardized and required
 
 
 ## Systems Design and Architecture
@@ -152,6 +152,7 @@ The whole document should be one or two pages long. We will write each ADR as if
 ### Design Patterns
 
 ### Supplemental Materials
+
 - Security requirements - full process architecture diagram
 
 
@@ -160,10 +161,10 @@ The whole document should be one or two pages long. We will write each ADR as if
 Technical debt can be defined as aspects of our code that will slow down future development. Debt can be intentional or unintentional but must be managed. Incurring too much technical debt can lead to a reduction in productivity, maintainability and testability which in turn leads to unhappy employees and decreased organizational performance. Engineers are responsible for making technical debt visible. Here are a few ways to mitigate and manage technical debt in your products:
 
 1. Keep a log of debt on your project for future conversations
-2. Discuss during backlog grooming
-3. Establish coding and documentation standards
-4. Familiarize yourself with common design & architecture patterns
-5. Be aware of new technologies
+1. Discuss during backlog grooming
+1. Establish coding and documentation standards
+1. Familiarize yourself with common design & architecture patterns
+1. Be aware of new technologies
 
 ### Acceptance Criteria
 
@@ -173,7 +174,33 @@ Engineers can help the team by reviewing acceptance criteria before the sprint b
 ## Development
 ---
 
+### Pointing and Scheduling work (Needs work)
+
+**Target ranges**
+
+- 30% - 50% Feature
+- 15% - 30% Innovation/Tech debt sometimes call chore
+- 5% - 20% bug
+
+*TODO define feature, bug Innovation/tech debt*
+
+**Pointing**
+
+All work should be pointed and labeled with the category. This allows you to see a break down of work and identify trends and make corrections when neccessary.  Feature velocity is down, why, oh we spent a lot of time on refactoring.  Why are we spending a large amount of time on refactoring, is it because we are rushing in new features?  Having this data is super helpful especially when doing retros
+
+The Product Manager discipline is sometimes only concerned with feature work pointing. Labeling the work allows you to pull out an accurate Feature velocity.
+
+**Refactoring**
+
+Refactoring is an oppurtunity drive down technical debt, optimize, and re-architect the codebase so the code can remain simple, decoupled, easily read, and painlessly scaled. Engineers often complain about old programing languages as if the language is root problem when real problem is old messy code bases. 
+
+Engineers should not shy away from performing large scale refactors (agreed on by the team) that improve the applications performance, ease of use, and deployability. These refactors can range from UI changes to entire revisions of the database.
+
+
+
 ### CI/CD Pipeline
+
+
 
 ### Continuous Integration
 
@@ -190,22 +217,22 @@ We believe that any merge to main should be able to deploy to production. Merges
 Building testing into our products provides us the confidence that we need to quickly deliver new features without the fear of breaking our products. The test pyramid depicts the types of test we can author along with the general distribution.
 
 
-#### Unit
+### Unit
 
-The unit test is designed to test a small, singular component. The tests are easy to author and maintain and thus often represent the largest portion of tests within the code.
+The unit test is designed to test a small, singular component/function/method. The tests are easy to author and maintain and thus often represent the largest portion of tests within the code.
 
 
-#### Contract Testing
+### Contract Testing
 
 TDD for micro service architecture, contracts are written on what will be consumed and then consumers and producers are tested against these contracts.  Eliminates the need for test environments that have all services running and at a specific version.
 
 
-#### Integration
+### Integration
 
 The integration test is designed to test between components. A typical example might be integrating with a database or a provided REST service. Integration tests require that you stand up not only your product but also the components with which you integrate. For this reason, they require more time and effort than unit tests. They often times are the second most frequently used test.
 
 
-#### End to End {#end-to-end}
+### End to End {#end-to-end}
 
 The end to end test is designed to test through your stack starting at the front end. The tests require the most time and effort to write and maintain. For this reason, they often represent the smallest portion of your tests.
 
