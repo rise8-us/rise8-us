@@ -174,7 +174,13 @@ Engineers can help the team by reviewing acceptance criteria before the sprint b
 ## Development
 ---
 
-### Pointing and Scheduling work (Needs work)
+### Pointing and Scheduling work (Needs work and sync with PMs)
+
+**Pointing**
+
+All work should be pointed and labeled with the category. This allows you to see a break down of work and identify trends and make corrections when neccessary. Feature velocity is down, why? Oh we spent a lot of time on refactoring.  Why are we spending a large amount of time on refactoring, is it because we are rushing in new features?  Having this data is super helpful especially when doing retros.
+
+The Product Manager discipline is sometimes only concerned with feature work pointing. Labeling the work allows you to pull out an accurate Feature velocity.
 
 **Target ranges**
 
@@ -184,19 +190,21 @@ Engineers can help the team by reviewing acceptance criteria before the sprint b
 
 *TODO define feature, bug Innovation/tech debt*
 
-**Pointing**
+**Feature**
+A feature is something that provides new capabibilties or improves end user experience.
 
-All work should be pointed and labeled with the category. This allows you to see a break down of work and identify trends and make corrections when neccessary.  Feature velocity is down, why, oh we spent a lot of time on refactoring.  Why are we spending a large amount of time on refactoring, is it because we are rushing in new features?  Having this data is super helpful especially when doing retros
+**Innovation / Refactoring**
+Innovation is proactive tech debt management.  Innovation work is time spent incorporating **new** libraries, patterns, or services to make the code base easier to maintain, scale, and or add features. Innovation work should be closely evaluated to ensure that it is a worth while return on investment; avoid innovating for the sake of innovation without providing any meaningful value.
 
-The Product Manager discipline is sometimes only concerned with feature work pointing. Labeling the work allows you to pull out an accurate Feature velocity.
+Refactoring is an oppurtunity drive down existing technical debt, optimize, and re-architect the codebase so the code can remain simple, decoupled, easily read, and painlessly scaled. Engineers often complain about old programing languages as if the language is root problem when real problem is old messy code bases.
 
-**Refactoring**
+Engineers should not shy away from performing large scale refactors (agreed on by the team) that improve the applications performance, ease of use, and deployability. These refactors can range from UI changes to entire revisions of the database schema.
 
-Refactoring is an oppurtunity drive down technical debt, optimize, and re-architect the codebase so the code can remain simple, decoupled, easily read, and painlessly scaled. Engineers often complain about old programing languages as if the language is root problem when real problem is old messy code bases. 
+**Bug**
+Any work being done to correct unexpected behaviors or faults that are inconsistent with the desired coded intent.
 
-Engineers should not shy away from performing large scale refactors (agreed on by the team) that improve the applications performance, ease of use, and deployability. These refactors can range from UI changes to entire revisions of the database.
-
-
+**NOTE**
+Security is a fundamental part of software developemnt and as such can be characterized to fit in all three of the categories as needed.  In a high compliance environment where stories are created to address security controls from Compliance tool such as SD Elements the team may want a seprate category to cover this work.
 
 ### CI/CD Pipeline
 
