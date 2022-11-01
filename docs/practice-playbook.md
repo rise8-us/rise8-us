@@ -174,7 +174,7 @@ Engineers can help the team by reviewing acceptance criteria before the sprint b
 ## Development
 ---
 
-### Pointing and Scheduling work (Needs work and sync with PMs)
+### Pointing and Scheduling work (Needs alignment with PMs)
 
 **Pointing**
 
@@ -206,18 +206,28 @@ Any work being done to correct unexpected behaviors or faults that are inconsist
 **NOTE**
 Security is a fundamental part of software developemnt and as such can be characterized to fit in all three of the categories as needed.  In a high compliance environment where stories are created to address security controls from Compliance tool such as SD Elements the team may want a seprate category to cover this work.
 
+### Git ops
+- git hooks
+- commit description
+- rebase v merge (we prefer rebase w/ squash)
+- Merge/Pull Request etiquette
+  - 
+- branch naming scheme
+
 ### CI/CD Pipeline
 
+**Continuous Integration**
+We believe CI is non-negotiable and must begin at the initial conception of development to ensure comprehensive software security, testing, and fast feedback on the main branch health. Furthermore it empowers the ability of the team to hold to agile practices.  
+
+CI stages should include at a minimum
+- linting
+- unit tests
+- static code analysis
+- dependency scans
 
 
-### Continuous Integration
-
-We believe CI is non-negotiable and must begin at the initial conception of development to ensure comprehensive software security, testing, and fast feedback on the main branch health. Furthermore it empowers the ability of the team to hold to agile practices.
-
-
-### Continuous Delivery
-
-We believe that any merge to main should be able to deploy to production. Merges should be self-contained and not dependant upon another branch.
+**Continuous Delivery**
+We believe that any merge to main should be able to deploy to production and main should always be deployable. Merges should be self-contained and not dependant upon another branch.
 
 ## Testing
 ---
