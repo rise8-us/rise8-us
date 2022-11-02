@@ -1,12 +1,17 @@
 {
-	"name": "Ubuntu",
-	"image": "mcr.microsoft.com/devcontainers/base:0-jammy",
+	"name": "Python 3",
+	"image": "mcr.microsoft.com/devcontainers/python:3.10-bullseye",
+	"features": {
+		"ghcr.io/devcontainers/features/node:1": {
+			"version": "lts"
+		}
+	},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "uname -a",
+	"postCreateCommand": "pip3 install mkdocs && pip3 install mkdocs-material",
 
 	// Set `remoteUser` to `root` to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "vscode",
@@ -16,8 +21,5 @@
 				"ms-vsliveshare.vsliveshare"
 			]
 		}
-	},
-	"features": {
-		"ghcr.io/devcontainers/features/python:1": {}
 	}
 }
