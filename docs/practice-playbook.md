@@ -146,10 +146,36 @@ Consequences This section describes the resulting context, after applying the de
 
 The whole document should be one or two pages long. We will write each ADR as if it is a conversation with a future developer. This requires good writing style, with full sentences organized into paragraphs. Bullets are acceptable only for visual style, not as an excuse for writing sentence fragments. (Bullets kill people, even PowerPoint bullets.)*
 
-### Domain Driven Design
 
 
-### Design Patterns
+### Design Patterns and Principles
+
+When solving a problem or designing new features the engineer should consider patterns and principle before implementations.  Practice and patterns often produce performant, maintainable code.  There are times when you may need to deviate or create your own patterns.  In these cases you should document your the reason for your desing decision.
+
+*Build list of common patterns and principles*
+- YAGNI You aint gonna Need it  
+Don't spend to much time future proofing or adding features you may never use.  
+
+- DRY don't repeat yourself  
+Minimize the amount of duplicated code, consider using interfaces, abstractions, utilties or patterns to eliminate repeated logic.  
+
+- SRP Single Responsibility principle  
+Make classes packages modules that solve one problem.
+- Open/Closed
+
+- Liskov Substitution
+
+- Interfac Segregation
+
+- Dependency Inversion
+
+- KISS Keep it super simple
+
+- GoF Patterns
+
+- DDD Domain Driven Design  
+Align software on business requirements not technical requirements
+
 
 ### Supplemental Materials
 
@@ -211,8 +237,39 @@ Security is a fundamental part of software developemnt and as such can be charac
 - commit description
 - rebase v merge (we prefer rebase w/ squash)
 - Merge/Pull Request etiquette
-  - 
+  - Comments/Suggestions/nitpicks
+  - Number of engineers
+  - Merge size
 - branch naming scheme
+
+MERGE/PULL REQUESTS
+MR/PRs are encouraged but not required.
+MR/PRs should be used when code review by an engineer outside the initial pair is desired.
+We highly recommend code review be completed, pairing can be a way to complete this.
+Regardless of MR/PR or pushing directly to main/master, testing needs to be completed on new functionality before it is committed to main/master.
+#YouBreakItYouBuyIt
+
+
+We highly encourage creating Merge Requests however they are not required. Given our committment to pair programming we believe that having one or two engineers review the code is sufficent to ensure code quality. Regardless of MR/PR or pushing directly to main/master, testing needs to be completed on new functionality before it is committed to main/master. #YouBreakItYouBuyIt
+
+MR COMMENTS
+We encourage comments/suggestions/questions/discussion/etc. on MR per our belief in strong opinions loosely held >> better resulting code
+Branch commits should be rebased and squashed before merging to keep the git history cleaner.
+
+HOOKS
+We encourage the use of commit hooks to further ensure code quality. These hooks can range from enforcing commit formats to running unit tests and may be left up to the team to decide.
+
+REBASE
+We encourage squashing and rebasing to preserve the cleanliness and readability of the git history on the master branch. This should only be performed by an engineer that understands the rebasing process in order to avoid causing irreparable damage to the master branch.
+
+CONCISE COMMIT MESSAGES
+Using industry standards such as [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/#summary) are not required but teams may choose to follow any other industry standard. Commit messages should be a brief, concise description in imperative tense of what the commit adds.
+
+
+MASTER SHOULD BE PROTECTED
+We believe merging in to master directly is **NEVER** justified in order to preserve the integrity of main. We understand that allowing to push to main directly without the checks associated with Merge Requests increases the probablility of intrroducing errors in hotfixes resulting in the need for hotfixes to hotfixes.
+
+
 
 ### CI/CD Pipeline
 
@@ -271,6 +328,8 @@ Ceremonies
 Engineers can help the team by helping to point stories. They can help estimate the amount or complexity of the work. Since engineers understand the work involved to fulfill a requirement,  they can ensure that stories are granular and right sized.
 
 ### Pair Programming
+
+Rotate pairs daily? after ticket? weekly?
 
 Pair programming is a development technique where two developers author software using the same computer. The computer is outfitted with two keyboards, two monitors and two mice. In a remote environment one user can share the screen with another via collaboration software such as [Zoom](https://zoom.us/). Pair programming has many benefits that include:
 
