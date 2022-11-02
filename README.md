@@ -13,7 +13,7 @@ See how to contribute [here](CONTRIBUTING.md).
 pip install mkdocs
 pip install mkdocs-material
 # run dev server
-mkdocs serve # codespaces: /home/codespace/.python/current/bin/mkdocs serve
+mkdocs serve
 ```
 
 ## Careers
