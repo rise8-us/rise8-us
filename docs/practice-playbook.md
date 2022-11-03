@@ -203,18 +203,14 @@ Engineers can help the team by reviewing acceptance criteria before the sprint b
 ### Pointing and Scheduling work (Needs alignment with PMs)
 
 **Pointing**
-
 All work should be pointed and labeled with the category. This allows you to see a break down of work and identify trends and make corrections when neccessary. Feature velocity is down, why? Oh we spent a lot of time on refactoring.  Why are we spending a large amount of time on refactoring, is it because we are rushing in new features?  Having this data is super helpful especially when doing retros.
 
 The Product Manager discipline is sometimes only concerned with feature work pointing. Labeling the work allows you to pull out an accurate Feature velocity.
 
 **Target ranges**
-
 - 30% - 50% Feature
 - 15% - 30% Innovation/Tech debt sometimes call chore
 - 5% - 20% bug
-
-*TODO define feature, bug Innovation/tech debt*
 
 **Feature**
 A feature is something that provides new capabibilties or improves end user experience.
@@ -247,33 +243,35 @@ MR/PRs are encouraged but not required.
 MR/PRs should be used when code review by an engineer outside the initial pair is desired.
 We highly recommend code review be completed, pairing can be a way to complete this.
 Regardless of MR/PR or pushing directly to main/master, testing needs to be completed on new functionality before it is committed to main/master.
-#YouBreakItYouBuyIt
+Cleanup/remove branches post merge/pull request completion. Abandoned branches should also be removed to avoid Git pollution.
+`#YouBreakItYouBuyIt`
 
+HOOKS
+Consdering the optionality of MRs/PRs, we strongly encourage the use of commit hooks to further ensure code quality. These hooks can range from enforcing commit formats to running unit tests and may be left up to the team to decide.
 
-We highly encourage creating Merge Requests however they are not required. Given our committment to pair programming we believe that having one or two engineers review the code is sufficent to ensure code quality. Regardless of MR/PR or pushing directly to main/master, testing needs to be completed on new functionality before it is committed to main/master. #YouBreakItYouBuyIt
 
 MR COMMENTS
 We encourage comments/suggestions/questions/discussion/etc. on MR per our belief in strong opinions loosely held >> better resulting code
 Branch commits should be rebased and squashed before merging to keep the git history cleaner.
 
-HOOKS
-We encourage the use of commit hooks to further ensure code quality. These hooks can range from enforcing commit formats to running unit tests and may be left up to the team to decide.
-
 REBASE
 We encourage squashing and rebasing to preserve the cleanliness and readability of the git history on the master branch. This should only be performed by an engineer that understands the rebasing process in order to avoid causing irreparable damage to the master branch.
 
-CONCISE COMMIT MESSAGES
-Using industry standards such as [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/#summary) are not required but teams may choose to follow any other industry standard. Commit messages should be a brief, concise description in imperative tense of what the commit adds.
-
+COMMIT MESSAGES
+Using industry standards such as [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/#summary) are not required but teams may choose to follow any given industry standard. Commit messages should be a brief, concise description in imperative tense of what the commit adds, and with the appropriate authors (alternating authors or using tools such as git with .git-together).
 
 MASTER SHOULD BE PROTECTED
-We believe merging in to master directly is **NEVER** justified in order to preserve the integrity of main. We understand that allowing to push to main directly without the checks associated with Merge Requests increases the probablility of intrroducing errors in hotfixes resulting in the need for hotfixes to hotfixes.
-
+We believe merging in to main directly is *rarely* justified in order to preserve the integrity of main. We understand that allowing to push to main directly without the checks associated with Merge Requests increases the probablility of intrroducing errors in hotfixes resulting in the need for hotfixes to hotfixes. Merging directly into main should be performed with the greatest of care and verification, with the team being made aware of the changes.
 
 
 ### CI/CD Pipeline
 
 **Continuous Integration**
+
+We beleive CI begins at the local development env. This includes the tools to run automated tests, linting, and other checks on branches **BEFORE** you merge up.
+
+
+
 We believe CI is non-negotiable and must begin at the initial conception of development to ensure comprehensive software security, testing, and fast feedback on the main branch health. Furthermore it empowers the ability of the team to hold to agile practices.  
 
 CI stages should include at a minimum
@@ -317,17 +315,23 @@ For further reading take a look at a the list of curated resources
 
 * [https://martinfowler.com/articles/practical-test-pyramid.html](https://martinfowler.com/articles/practical-test-pyramid.html)
 
+## Operating Apps
+---
+- Logging
+- Observability
+- Alerting
+- Incident response
 
 ## Practices
 ---
 
 Ceremonies
 
-### Story Point
+### Story Point (move to development)
 
 Engineers can help the team by helping to point stories. They can help estimate the amount or complexity of the work. Since engineers understand the work involved to fulfill a requirement,  they can ensure that stories are granular and right sized.
 
-### Pair Programming
+### Pair Programming (move to development)
 
 Rotate pairs daily? after ticket? weekly?
 
@@ -353,7 +357,7 @@ Here are few helpful hints when pairing:
 
 
 
-### Test Driven Development
+### Test Driven Development (move to development)
 
 Test Driven Development is software development practice. The process starts with authoring a failing test and then implementing the functionality required for the test to succeed. Often times referred to as “Red Green Refactor”, it consists of three distinct steps (red-green-refactor):
 
@@ -364,7 +368,7 @@ Test Driven Development is software development practice. The process starts wit
 3. Refactor
 
 
-### Code Review
+### Code Review (move to development)
 
 The primary purpose of code review is to make sure that the overall code health of the project's codebase is improving over time, and a series of trade-offs have to be balanced.
 
@@ -413,17 +417,17 @@ _This section was derived, with modifications, from [Google Engineering Practice
 ## Modern Applications
 
 
-### Logging
+### Logging (Operating apps)
 
 As you ship your application into production you want to make sure that your logs can be processed and aggregated easily. Designing your application in this fashion will allow the platform to treat all application logs the same. Additionally, it allows for providing a base set of services your organization will need to support and operate your application. A few examples include, access to logs for debugging as well as setting up alerts for monitoring. The standard practice is to write log entries to stdout. For further information, check out the  [logs](https://12factor.net/logs) section on [12factor.net](https://12factor.net/)
 
 
-### Configuration
+### Configuration (Design)
 
 Your application will exist in numerous environments including development, staging and production. For this reason, it is important that your application can be configured easily. Keep in mind that your application is likely to end up on a platform like Kubernetes where managing the lifecycle of an application is important. The standard practice is to expose configuration via granular environment variables. The configuration defines a contract with the tools that manages your application’s lifetime. For further information, check out the [config](https://12factor.net/config) section on [12factor.net](https://12factor.net/)
 
 
-### Backing Services
+### Backing Services (Design)
 
 As you build out your application, there will be a set of services you wish to consume. You should consider what services are needed and if they are provided as part of the platform offering. Configuring these services is as simple as adding environment variables to your configuration (see above). Listed below are common services:
 
@@ -436,7 +440,7 @@ As you build out your application, there will be a set of services you wish to c
 5. Email (ie SMTP)
 
 
-### Monitoring
+### Monitoring (Operating)
 
 Monitoring your application will help you be successful. Monitoring can help you understand how your application is being used and by whom. Monitoring can help you understand whether your application is functioning. When you start building your application consider the following:
 
