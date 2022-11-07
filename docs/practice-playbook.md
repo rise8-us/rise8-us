@@ -238,30 +238,35 @@ Security is a fundamental part of software developemnt and as such can be charac
   - Merge size
 - branch naming scheme
 
-MERGE/PULL REQUESTS
+#### MERGE/PULL REQUESTS
 MR/PRs are encouraged but not required.
-MR/PRs should be used when code review by an engineer outside the initial pair is desired.
+MR/PRs should be used when code review by an engineer outside the initial contributing pair is desired.
 We highly recommend code review be completed, pairing can be a way to complete this.
-Regardless of MR/PR or pushing directly to main/master, testing needs to be completed on new functionality before it is committed to main/master.
-Cleanup/remove branches post merge/pull request completion. Abandoned branches should also be removed to avoid Git pollution.
+Regardless of MR/PR or pushing directly to main/master, testing needs to be completed on new functionality before it is committed and pushed to main/master.
 `#YouBreakItYouBuyIt`
 
-HOOKS
+#### HOOKS
 Consdering the optionality of MRs/PRs, we strongly encourage the use of commit hooks to further ensure code quality. These hooks can range from enforcing commit formats to running unit tests and may be left up to the team to decide.
 
-
-MR COMMENTS
+#### MERGE REQUEST COMMENTS
 We encourage comments/suggestions/questions/discussion/etc. on MR per our belief in strong opinions loosely held >> better resulting code
 Branch commits should be rebased and squashed before merging to keep the git history cleaner.
 
-REBASE
+#### REBASE
 We encourage squashing and rebasing to preserve the cleanliness and readability of the git history on the master branch. This should only be performed by an engineer that understands the rebasing process in order to avoid causing irreparable damage to the master branch.
 
-COMMIT MESSAGES
-Using industry standards such as [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/#summary) are not required but teams may choose to follow any given industry standard. Commit messages should be a brief, concise description in imperative tense of what the commit adds, and with the appropriate authors (alternating authors or using tools such as git with .git-together).
+#### COMMIT MESSAGES
+Using industry standards such as [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/#summary) are not required but teams may choose to follow any given industry standard. Commit messages should be a brief, concise description in imperative tense of what the commit adds, with the appropriate authors (alternating authors or using tools such as git with .git-together), and the ID of the corresponding story.
 
-MASTER SHOULD BE PROTECTED
-We believe merging in to main directly is *rarely* justified in order to preserve the integrity of main. We understand that allowing to push to main directly without the checks associated with Merge Requests increases the probablility of intrroducing errors in hotfixes resulting in the need for hotfixes to hotfixes. Merging directly into main should be performed with the greatest of care and verification, with the team being made aware of the changes.
+#### BRANCH NAMING
+Branch naming should be clear and concise. We reccomend the convention of including the story ID followed by a few words for the branch's purpose, using dashes (-) as the delimiter.
+
+#### BRANCH MAINTENANCE
+Cleanup/remove branches post merge/pull request completion.
+Developers should be wary and not have too many inactive/stale branches linger. Abandoned branches should be removed to avoid Git pollution.
+
+#### MASTER SHOULD BE PROTECTED
+We believe merging into the main branch directly is *rarely* justified in order to preserve the integrity of main. We understand that allowing to push to main directly without the checks associated with Merge Requests increases the probablility of introducing errors in hotfixes, resulting in the need to hotfix hotfixes. Merging directly into main should be performed with the greatest of care and verification, with the team being made aware of the changes.
 
 
 ### CI/CD Pipeline
