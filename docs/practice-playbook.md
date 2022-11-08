@@ -238,11 +238,19 @@ Security is a fundamental part of software developemnt and as such can be charac
   - Merge size
 - branch naming scheme
 
-#### MERGE/PULL REQUESTS
-MR/PRs are encouraged but not required.
-MR/PRs should be used when code review by an engineer outside the initial contributing pair is desired.
-We highly recommend code review be completed, pairing can be a way to complete this.
-Regardless of MR/PR or pushing directly to main/master, testing needs to be completed on new functionality before it is committed and pushed to main/master.
+#### Code Review
+
+We believe code review is important whether you're pairing or not. This code review can come in various forms depending on pairing status.
+### When Pairing
+We believe pairing serves as a "code review" in of itself and therefore additional code reviews are not necessary.
+
+### When Solo
+When soloing, Merge/Pull Requests should be used to code review.
+
+
+
+We highly recommend code review be completed, pairing can be a way to complete this (and why we view commiting to master directly as a valid practice).
+Regardless of MR/PR or commiting directly to main/master, testing needs to be completed on new functionality before it is committed and pushed to main/master.
 `#YouBreakItYouBuyIt`
 
 #### HOOKS
@@ -265,8 +273,6 @@ Branch naming should be clear and concise. We reccomend the convention of includ
 Cleanup/remove branches post merge/pull request completion.
 Developers should be wary and not have too many inactive/stale branches linger. Abandoned branches should be removed to avoid Git pollution.
 
-#### MASTER SHOULD BE PROTECTED
-We believe merging into the main branch directly is *rarely* justified in order to preserve the integrity of main. We understand that allowing to push to main directly without the checks associated with Merge Requests increases the probablility of introducing errors in hotfixes, resulting in the need to hotfix hotfixes. Merging directly into main should be performed with the greatest of care and verification, with the team being made aware of the changes.
 
 
 ### CI/CD Pipeline
