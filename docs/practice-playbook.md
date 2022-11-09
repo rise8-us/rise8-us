@@ -1,5 +1,8 @@
 # Engineering Practice Playbook
 
+## Preamble
+This document contains our opinions on software developemnt. We understand that it is not always possible to hold to some of these standards. We trust each of our engineer's autonomy to respond to any given situtation.
+
 ## What is an Engineer?
 ---
 
@@ -197,8 +200,97 @@ Technical debt can be defined as aspects of our code that will slow down future 
 Engineers can help the team by reviewing acceptance criteria before the sprint begins. The acceptance criteria should be clear and free of interpretation.
 
 
+## Practices
+---
+
+Ceremonies
+
+### Story Point
+
+Engineers can help the team by helping to point stories. They can help estimate the amount or complexity of the work. Since engineers understand the work involved to fulfill a requirement,  they can ensure that stories are granular and right sized.
+
+### Pair Programming
+
+Rotate pairs daily? after ticket? weekly?
+
+
+
+Pair programming is a development technique where two developers author software using the same computer. In person, the computer is outfitted with two keyboards, two monitors and two mice. In a remote environment one user can share the screen with another via collaboration software such as [Zoom](https://zoom.us/) and Live Share. There are two roles in pair programming:
+
+Driver: The person who is writing the code.
+Navigator: Helps the driver navigate code development process. They can write code in the form of suggestions or corrections.
+
+Pair programming has many benefits that include:
+
+1. Knowledge sharing (both domain and technical knowledge)
+2. Immediate code reviews
+3. Improved interpersonal communication
+4. Reduction in code defects
+
+Here are few helpful hints when pairing:
+
+1. Pairing can be tiring, take breaks often
+2. Rotate pairs regularly. Each person brings something unique to the table which will improve the codebase as a whole. Swapping pairs also drives both knowledge sharing and alignment across the team.
+3. Be open to new ideas and constructive criticism
+4. Sometimes pairing might not be the best approach. Feel free to solo when it makes sense. But remember, committed code requires a peer review.
+
+
+
+#### Mentoring
+
+Code reviews can be an essential function for teaching developers something new about a language, a framework, or general software design principles. It's always OK to leave comments that help a developer learn something new. Sharing knowledge is part of improving the code health of a system over time. Just keep in mind that if your comment is purely educational but not critical to meeting the standards described in this document, prefix it with "Nit: "or otherwise indicate that the author doesn't need to resolve it in this merge request.
+
+
+#### Resolving Conflicts
+
+In any conflict on a code review, the first step should always be for the developer and reviewer to reach an agreement.
+
+When coming to consensus becomes especially difficult, it can help to have a face-to-face meeting or a video conference between the reviewer and the author, instead of just trying to resolve the conflict through code review comments. (If you do this, though, make sure to record the discussion results as a comment on the merge request for future readers.)
+
+If that doesn't resolve the situation, the most common way to resolve it would be to escalate. Often the escalation path is to a broader team discussion, having a Technical Lead weigh in, asking for a decision from a maintainer of the code, or asking an Eng Manager to help.
+
+Don't let a merge request sit around because the author and the reviewer can't agree.
+
+_This section was derived, with modifications, from [Google Engineering Practices Documentation](https://github.com/google/eng-practices)_
+
 ## Development
 ---
+
+### Test Driven Development
+
+Test Driven Development is software development practice. The process starts with authoring a failing test and then implementing the functionality required for the test to succeed. Often times referred to as “Red Green Refactor”, it consists of three distinct steps (red-green-refactor):
+
+1. Author a failing test
+2. Author just enough code for test to pass
+3. Refactor
+
+### Code Review
+
+The primary purpose of code review is to make sure that the overall code health of the project's codebase is improving over time, and a series of trade-offs have to be balanced.
+
+First, developers must be able to _make progress_ on their tasks. If you never submit an improvement to the codebase, then the codebase never improves. Also, if a reviewer makes it very difficult for _any_ change to go in, developers are disincentivized to improve in the future.
+
+Second, the reviewer must ensure that each merge request is of such a quality that their codebase's overall health is not decreasing as time goes on. This can be tricky because codebases degrade through small decreases in code health over time, especially when a team is under significant time constraints and feel that they have to take shortcuts to accomplish their goals.
+
+A reviewer has ownership and responsibility for the code they are reviewing. They want to ensure that the codebase stays consistent and maintainable.
+
+Thus, we get the following rule as the standard we expect in code reviews:
+
+In general, reviewers should favor approving a merge request once it is in a state where it improves the overall code health of the system being worked on, even if the merge request isn't perfect.
+
+There are limitations to this, of course. For example, if a merge request adds a feature that the reviewer doesn't want in their system, then the reviewer can certainly deny approval even if the code is well-designed.
+
+A key point here is that there is no such thing as "perfect" code—there is only _better_ code. Reviewers should not require the author to polish every tiny piece of a merge request before approving. Instead, the reviewer should balance out the need to make forward progress compared to the importance of the changes they are suggesting. Instead of seeking perfection, what a reviewer should seek is _continuous improvement_. A merge request that improves the maintainability, readability and understandability of the system shouldn't be delayed because it isn't "perfect."
+
+Reviewers should _always_ feel free to leave comments expressing that something could be better, but if it's not very important, prefix it with something like "Nit: "to let the author know that it's just a point of polish that they could choose to ignore (Nit means nit-pick).
+
+
+
+Note: Nothing in this document justifies checking in merge requests that _worsen_ the system's overall code health. The only time you would do that would be in an emergency.
+
+- Aspects of software design are seldom a pure style issue or just a personal preference**.** They are based on underlying principles and should be weighed on those principles, not simply by subjective opinion. Sometimes there are a few valid options. If the author can demonstrate (either through data or based on solid engineering principles) that several approaches are equally good, the reviewer should accept the author's preference. Otherwise, the choice is dictated by standard principles of software design.
+- If no other rule applies, then the reviewer may ask the author to be consistent with the current codebase, as long as that doesn't worsen the system's overall code health.
+- On matters of style, the style guide is the absolute authority. Any purely style point (whitespace, etc.) not in the style guide is a personal preference. The style should be consistent with what is there. If there is no previous style, accept the author's style.
 
 ### Pointing and Scheduling work (Needs alignment with PMs)
 
@@ -240,38 +332,29 @@ Security is a fundamental part of software developemnt and as such can be charac
 
 #### Code Review
 
-We believe code review is important whether you're pairing or not. This code review can come in various forms depending on pairing status.
-### When Pairing
-We believe pairing serves as a "code review" in of itself and therefore additional code reviews are not necessary.
-
-### When Solo
-When soloing, Merge/Pull Requests should be used to code review.
-
-
-
-We highly recommend code review be completed, pairing can be a way to complete this (and why we view commiting to master directly as a valid practice).
+Code review is necessary whether you're pairing or not. We believe pairing serves as a "code review" in and of itself and therefore additional code reviews are not necessary. When soloing, Merge/Pull Requests should be used to review code.
 Regardless of MR/PR or commiting directly to main/master, testing needs to be completed on new functionality before it is committed and pushed to main/master.
 `#YouBreakItYouBuyIt`
 
 #### HOOKS
-Consdering the optionality of MRs/PRs, we strongly encourage the use of commit hooks to further ensure code quality. These hooks can range from enforcing commit formats to running unit tests and may be left up to the team to decide.
+We strongly encourage the use of commit hooks to further ensure code quality. These hooks can range from enforcing commit formats to running unit tests and may be left up to the team to decide.
 
 #### MERGE REQUEST COMMENTS
 We encourage comments/suggestions/questions/discussion/etc. on MR per our belief in strong opinions loosely held >> better resulting code
-Branch commits should be rebased and squashed before merging to keep the git history cleaner.
 
 #### REBASE
-We encourage squashing and rebasing to preserve the cleanliness and readability of the git history on the master branch. This should only be performed by an engineer that understands the rebasing process in order to avoid causing irreparable damage to the master branch.
+We encourage squashing and rebasing to preserve the cleanliness and readability of the git history on the master branch. This should only be performed by an engineer that understands the rebasing process in order to avoid causing irreparable damage to the master branch. If done correctly, there should be no explicit merge commits.
+
+NOTE: Certain technologies (i.e. GitLab) default behavior creates merge commits. This can be changed.
 
 #### COMMIT MESSAGES
-Using industry standards such as [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/#summary) are not required but teams may choose to follow any given industry standard. Commit messages should be a brief, concise description in imperative tense of what the commit adds, with the appropriate authors (alternating authors or using tools such as git with .git-together), and the ID of the corresponding story.
+Commit messages should be a brief, concise description in imperative tense of what the commit adds, with the appropriate authors (alternating authors or using tools such as git with .git-together), and the ID of the corresponding story. Using industry standards such as [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/#summary) are not required but teams may choose to follow any given industry standard.
 
 #### BRANCH NAMING
-Branch naming should be clear and concise. We reccomend the convention of including the story ID followed by a few words for the branch's purpose, using dashes (-) as the delimiter.
+Branch naming should be clear and concise. We recommend the convention of including the story ID followed by a few words for the branch's purpose, using dashes (-) as the delimiter.
 
 #### BRANCH MAINTENANCE
-Cleanup/remove branches post merge/pull request completion.
-Developers should be wary and not have too many inactive/stale branches linger. Abandoned branches should be removed to avoid Git pollution.
+Cleanup/remove branches post merge completion. Developers should be wary and not have too many inactive/stale branches linger. Abandoned branches should be removed to avoid Git pollution.
 
 
 
@@ -332,97 +415,6 @@ For further reading take a look at a the list of curated resources
 - Observability
 - Alerting
 - Incident response
-
-## Practices
----
-
-Ceremonies
-
-### Story Point (move to development)
-
-Engineers can help the team by helping to point stories. They can help estimate the amount or complexity of the work. Since engineers understand the work involved to fulfill a requirement,  they can ensure that stories are granular and right sized.
-
-### Pair Programming (move to development)
-
-Rotate pairs daily? after ticket? weekly?
-
-Pair programming is a development technique where two developers author software using the same computer. The computer is outfitted with two keyboards, two monitors and two mice. In a remote environment one user can share the screen with another via collaboration software such as [Zoom](https://zoom.us/). Pair programming has many benefits that include:
-
-
-
-1. Knowledge sharing (both domain and technical knowledge)
-2. Immediate code reviews
-3. Improved interpersonal communication
-4. Reduction in code defects
-
-Here are few helpful hints when pairing:
-
-
-
-1. Pairing can be tiring, take breaks often
-2. Rotate pairs regularly. Each person brings something unique to the table which will improve the codebase as a whole. Swapping pairs also drives both knowledge sharing and alignment across the team.
-3. Be open to new ideas and constructive criticism
-4. Sometimes pairing might not be the best approach. Feel free to solo when it makes sense. But remember, committed code requires a peer review.
-
-
-
-
-
-### Test Driven Development (move to development)
-
-Test Driven Development is software development practice. The process starts with authoring a failing test and then implementing the functionality required for the test to succeed. Often times referred to as “Red Green Refactor”, it consists of three distinct steps (red-green-refactor):
-
-
-
-1. Author a failing test
-2. Author just enough code for test to pass
-3. Refactor
-
-
-### Code Review (move to development)
-
-The primary purpose of code review is to make sure that the overall code health of the project's codebase is improving over time, and a series of trade-offs have to be balanced.
-
-First, developers must be able to _make progress_ on their tasks. If you never submit an improvement to the codebase, then the codebase never improves. Also, if a reviewer makes it very difficult for _any_ change to go in, developers are disincentivized to improve in the future.
-
-Second, the reviewer must ensure that each merge request is of such a quality that their codebase's overall health is not decreasing as time goes on. This can be tricky because codebases degrade through small decreases in code health over time, especially when a team is under significant time constraints and feel that they have to take shortcuts to accomplish their goals.
-
-A reviewer has ownership and responsibility for the code they are reviewing. They want to ensure that the codebase stays consistent and maintainable.
-
-Thus, we get the following rule as the standard we expect in code reviews:
-
-In general, reviewers should favor approving a merge request once it is in a state where it improves the overall code health of the system being worked on, even if the merge request isn't perfect.
-
-There are limitations to this, of course. For example, if a merge request adds a feature that the reviewer doesn't want in their system, then the reviewer can certainly deny approval even if the code is well-designed.
-
-A key point here is that there is no such thing as "perfect" code—there is only _better_ code. Reviewers should not require the author to polish every tiny piece of a merge request before approving. Instead, the reviewer should balance out the need to make forward progress compared to the importance of the changes they are suggesting. Instead of seeking perfection, what a reviewer should seek is _continuous improvement_. A merge request that improves the maintainability, readability and understandability of the system shouldn't be delayed because it isn't "perfect."
-
-Reviewers should _always_ feel free to leave comments expressing that something could be better, but if it's not very important, prefix it with something like "Nit: "to let the author know that it's just a point of polish that they could choose to ignore (Nit means nit-pick).
-
-
-
-Note: Nothing in this document justifies checking in merge requests that _worsen_ the system's overall code health. The only time you would do that would be in an emergency.
-
-- Aspects of software design are seldom a pure style issue or just a personal preference**.** They are based on underlying principles and should be weighed on those principles, not simply by subjective opinion. Sometimes there are a few valid options. If the author can demonstrate (either through data or based on solid engineering principles) that several approaches are equally good, the reviewer should accept the author's preference. Otherwise, the choice is dictated by standard principles of software design.
-- If no other rule applies, then the reviewer may ask the author to be consistent with the current codebase, as long as that doesn't worsen the system's overall code health.
-- On matters of style, the style guide is the absolute authority. Any purely style point (whitespace, etc.) not in the style guide is a personal preference. The style should be consistent with what is there. If there is no previous style, accept the author's style.
-
-#### Mentoring
-
-Code reviews can be an essential function for teaching developers something new about a language, a framework, or general software design principles. It's always OK to leave comments that help a developer learn something new. Sharing knowledge is part of improving the code health of a system over time. Just keep in mind that if your comment is purely educational but not critical to meeting the standards described in this document, prefix it with "Nit: "or otherwise indicate that the author doesn't need to resolve it in this merge request.
-
-
-#### Resolving Conflicts
-
-In any conflict on a code review, the first step should always be for the developer and reviewer to reach an agreement.
-
-When coming to consensus becomes especially difficult, it can help to have a face-to-face meeting or a video conference between the reviewer and the author, instead of just trying to resolve the conflict through code review comments. (If you do this, though, make sure to record the discussion results as a comment on the merge request for future readers.)
-
-If that doesn't resolve the situation, the most common way to resolve it would be to escalate. Often the escalation path is to a broader team discussion, having a Technical Lead weigh in, asking for a decision from a maintainer of the code, or asking an Eng Manager to help.
-
-Don't let a merge request sit around because the author and the reviewer can't agree.
-
-_This section was derived, with modifications, from [Google Engineering Practices Documentation](https://github.com/google/eng-practices)_
 
 
 ## Modern Applications
