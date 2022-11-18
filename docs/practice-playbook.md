@@ -171,7 +171,7 @@ Refactoring is an opportunity drive down existing technical debt, optimize, and 
 Any work being done to correct unexpected behaviors or faults that are inconsistent with the desired coded intent.
 
 **NOTE**
-Security is a fundamental part of software development and as such can be characterized to fit in all three of the categories as needed.  In high compliance environments where stories are created to address security controls from Compliance tool such as SD Elements the team may want a separate category to cover this work.
+Security is a fundamental part of software development and as such can be characterized to fit in all three of the categories as needed.  However, you may to create your own category for security work this is common in high compliance environments.
 
 ### Standup
 A quick 10-15 min meeting typically held at the beginning of the day. Team members will give a **few** sentences on what the accomplished yesterday, planning to do today, and any blockers they may have.  If greater detail is required coordinate a discussion with the relevant team members post standup.
