@@ -1,7 +1,7 @@
 # Engineering Practice Playbook
 
 ## Preamble
-This document contains our opinions on software developemnt. We understand that it is not always possible to hold to some of these standards. We trust each of our engineer's autonomy to respond to any given situtation.
+This document contains our opinions on software development. We understand that it is not always possible to hold to some of these standards. We trust each of our engineer's autonomy to respond to any given situation.
 
 ## What is an Engineer?
 ---
@@ -47,14 +47,14 @@ Engineers evaluate existing FOSS, Commercial, and Government Off the Shelf. Belo
 
 [todo]: # "Separate into groups (Build & Purchase/Use)"
 
-- Is there an offering that sufficently meets the team's requirements
+- Is there an offering that sufficiently meets the team's requirements
 - Build, operate, maintain, and upgrade cost Vs buy and licensing cost?
 - Do we have the expertise to build?
 - What is the learning curve/developer experience of the commercial products?
 - Security requirements?
 - Will new features be required, can they be added to the buy option?
 - How much granular control of the system is necessary?
-- Will the buy/FOSS option be maintained longterm
+- Will the buy/FOSS option be maintained long term
 - Is the offering well documented/provide a satisfactory user experience?
 - Time to market?
 
@@ -83,7 +83,7 @@ Engineers evaluate existing FOSS, Commercial, and Government Off the Shelf. Belo
 Proof of Concept --> Prototype --> MVP
 
 ### Proof of Concept
-The goal of a Proof of Concept is for quick applied technical discovery to learn information and empower decision making. It can be comprised of pseudo-code, code-fragments, and/or diagrams that depict how the systems communicate. Outcome should be to validate & verify if feasible to accomplish, becomes the reference to for the prototype.
+The Proof of Concept is for quick technical discovery, learning information, and empowering decision-making. It may be comprised of pseudo-code, code-fragments, and/or diagrams that depict how systems communicate or UIs interact. The outcome should validate & verify the concept, and becomes the reference to for the prototype.
 
 Should we use best practices when building a proof of concept?
   - Not required, but encouraged
@@ -100,7 +100,7 @@ What types of outcomes/information should the prototype produce?
 - User traction/Customer feedback
 
 ### MVP
-An MVP builds on a Prototype by adding functionality, error handling, and integratation with a production environment.
+An MVP builds on a Prototype by adding functionality, error handling, and integration with a production environment.
 
 What defines an MVP?
 - Full functionality
@@ -114,12 +114,12 @@ Should we use best practices when building an MVP?
 ---
 
 ### Architecture
-We will use `SPIKES` in the issue tracking system to document descsions that impact structure, non-functional characteristics, dependencies, interfaces, or construction techniques.  A Spike should be short andI caputures the specific context around the decsion.  A Spike will have a Title, Status, Context, Descsion, and Consequences section. Title Spikes with a short Noun phrases such as "SPIKE: Caching with Redis". Status can be relected by the state of the issue in the issue tracking system. Context documents the technical and business forces at play, verbage should be value neutral. Decision documents the why and how we choost to respond to the forces. Finally consequences documents any risks involved with the descion.
+We will use `SPIKES` in the issue tracking system to document decisions that impact structure, non-functional characteristics, dependencies, interfaces, or construction techniques.  A Spike should be short andI captures the specific context around the decision.  A Spike will have a Title, Status, Context, Decision, and Consequences section. Title Spikes with a short Noun phrases such as "SPIKE: Caching with Redis". Status can be selected by the state of the issue in the issue tracking system. Context documents the technical and business forces at play, verbiage should be value neutral. Decision documents the why and how we choose to respond to the forces. Finally, consequences documents any risks involved with the decision.
 
-It is good to keep a record of reversed decisions, and why it was reversed.  It is common for old failed descions to resurface with out historical knowledge in long running projects
+It is good to keep a record of reversed decisions, and why it was reversed.  It is common for old failed decisions to resurface without historical knowledge in long-running projects
 
 ### Design Patterns and Best Practices
-We rely heavily on existing best practices and design patters both for their proven capabilities as well as providing a common and well known means of solving a problem. Patterns and practices make for engineer to move between projects.  However there mayb times we need to deviate such as, the new pattern leads to increased readbility, maintainability, scalability, and performance.  Note a performance in and of itself is not typically engough to justify a deviation.  
+We rely heavily on existing best practices and design patters both for their proven capabilities and providing a common and well known means of solving a problem. Patterns and practices make for engineer to move between projects.  However, there maybe times we need to deviate such as, the new pattern leads to increased readability, maintainability, scalability, and performance.  Note a performance in and of itself is not typically enough to justify a deviation.  
 
 [todo]: # "Add resources for existing design patterns"
 
@@ -133,11 +133,11 @@ Technical debt can be defined as aspects of our code that will slow down future 
 1. Familiarize yourself with common design & architecture patterns
 1. Be aware of new technologies
 
-## Cerimonies
+## Ceremonies
 ---
 ### Iterative Planning Meeting (IPM)
 [todo]: # "Align with PMs"
-The IPM selects the work that will be done in the next cycle typically 1-2 week sprints. It is our reccomendation to target work as follows.  
+The IPM selects the work that will be done in the next cycle typically 1-2 week sprints. It is our recommendation to target work as follows.  
 **Target ranges**
 - 30% - 50% Feature
 - 15% - 30% Innovation/Tech debt sometimes call chore
@@ -154,12 +154,12 @@ Engineers can help the team by helping to point stories. They can help estimate 
 [TODO]: # "define feature, bug Innovation/tech debt"
 
 **Feature**
-A feature is something that provides new capabibilties or improves end user experience. A Feature will often have a story that reads something like this. As a: xxx, I want: xxx, So That xxx. A feature should also have an acceptance criteria or definition of done.
+A feature is something that provides new capabilities or improves end user experience. A Feature will often have a story that reads something like this. As a: xxx, I want: xxx, So That xxx. A feature should also have an acceptance criteria or definition of done.
 
 **Innovation / Refactoring**
-Innovation is proactive tech debt management.  Innovation work is time spent incorporating **new** libraries, patterns, or services to make the code base easier to maintain, read, secure, and scale, or add capabilities. Innovation work should be closely evaluated to ensure that it provides a return on investment. Avoid innovation for innovation sake there must be clearly definable advantage.
+Innovation is proactive tech debt management.  Innovation work is time spent incorporating **new** libraries, patterns, or services to make the code base easier to maintain, read, secure, and scale, or add capabilities. Innovation work should be closely evaluated to ensure that it provides a return on investment. Avoid innovation for innovation’s sake there must be clearly definable advantage.
 
-Refactoring is an oppurtunity drive down existing technical debt, optimize, and re-architect the codebase. Refactoring keeps code simple, decoupled, easily read, and painlessly scaled. Engineers often complain about old programing languages as if the language is root problem when real problem is old messy spagehetti code.
+Refactoring is an opportunity drive down existing technical debt, optimize, and re-architect the codebase. Refactoring keeps code simple, decoupled, easily read, and painlessly scaled. Engineers often complain about old programing languages as if the language is root problem when real problem is old messy spaghetti code.
 
 1. Knowledge sharing (both domain and technical knowledge)
 2. Immediate code reviews
@@ -171,10 +171,10 @@ Refactoring is an oppurtunity drive down existing technical debt, optimize, and 
 Any work being done to correct unexpected behaviors or faults that are inconsistent with the desired coded intent.
 
 **NOTE**
-Security is a fundamental part of software developemnt and as such can be characterized to fit in all three of the categories as needed.  In high compliance environments where stories are created to address security controls from Compliance tool such as SD Elements the team may want a seprate category to cover this work.
+Security is a fundamental part of software development and as such can be characterized to fit in all three of the categories as needed.  In high compliance environments where stories are created to address security controls from Compliance tool such as SD Elements the team may want a separate category to cover this work.
 
 ### Standup
-A quick 10-15 min meeting typically held at the begining of the day. Team membes will give a **few** sentences on what the accomplished yesterday, planning to do today, and any blockers they may have.  If greater detial is required coordinate a followon discisson with the relvant team members.
+A quick 10-15 min meeting typically held at the beginning of the day. Team members will give a **few** sentences on what the accomplished yesterday, planning to do today, and any blockers they may have.  If greater detail is required coordinate a discussion with the relevant team members post standup.
 
 ### Retro
 A meeting to reflect on the past work cycle and identify what worked what didn't and any actions needed to be taken going forward.  Release some stress while looking forward to the making the next work cycle better. This is also a good time to call out your team members on their accomplishments.
@@ -205,7 +205,7 @@ Test Driven Development is software development practice. The process starts wit
 ### Code Review
 The primary purpose of code review is to make sure that the overall code health of the project's codebase is improving over time, and a series of trade-offs have to be balanced.
 
-First, developers must be able to _make progress_ on their tasks. If you never submit an improvement to the codebase, then the codebase never improves. Also, if a reviewer makes it very difficult for _any_ change to go in, developers are disincentivized to improve in the future.
+First, developers must be able to _make progress_ on their tasks. If you never submit an improvement to the codebase, then the codebase never improves. Also, if a reviewer makes it very difficult for _any_ change to go in, developers are disincentivised to improve in the future.
 
 Second, the reviewer must ensure that each merge request is of such a quality that their codebase's overall health is not decreasing as time goes on. This can be tricky because codebases degrade through small decreases in code health over time, especially when a team is under significant time constraints and feel that they have to take shortcuts to accomplish their goals.
 
@@ -261,7 +261,7 @@ We encourage squashing and rebasing to preserve the cleanliness and readability 
 NOTE: Certain technologies (i.e. GitLab) default behavior creates merge commits. This can be changed.
 
 ### BRANCHING
-GitFlow or Trunk based branching is prefered.
+GitFlow or Trunk based branching is preferred.
 
 Branch naming should be clear and concise. We recommend the convention of including the story ID followed by a few words for the branch's purpose, using dashes (-) as the delimiter.
 
@@ -273,7 +273,7 @@ Cleanup/remove branches post merge completion. Developers should be wary and not
 **Continuous Integration**   
 We beleive CI begins at the local development env. This includes the tools to run automated tests, linting, and other checks on branches **BEFORE** you merge up.
 
-We believe CI is non-negotiable and must begin at the initial conception of development to ensure comprehensive software security, testing, and fast feedback on the main branch health. Furthermore it empowers the ability of the team to hold to agile practices.  
+We believe CI is non-negotiable and must begin at the initial conception of development to ensure comprehensive software security, testing, and fast feedback on the main branch health. Furthermore, it empowers the ability of the team to hold to agile practices.  
 
 **CI stages should include at a minimum**
 - linting
@@ -292,15 +292,15 @@ Building testing into our products provides us the confidence that we need to qu
 The unit test is designed to test a small, singular component/function/method. Target the public methods of your classes, private and protected methods are part of the public unit. The tests are easy to author and maintain, fast to run. Unit Tests represent the largest portion of tests within the code.
 
 ### Contract Testing
-TDD for micro service architecture, contracts are written on what will be consumed and then consumers and producers are tested against these contracts.  Eliminates the need for test environments that have all services running and at a specific version.
+TDD for microservice architecture, contracts are written on what will be consumed and then consumers and producers are tested against these contracts.  Eliminates the need for test environments that have all services running and at a specific version.
 
 ### Integration
-The integration test is designed to test between components. A typical example might be integrating with a database or a provided REST service. Integration tests require that you stand up not only your product but also the components with which you integrate. For this reason, they require more time and effort than unit tests. They often times are the second most frequently used test.
+The integration test is designed to test between components. A typical example might be integrating with a database or a provided REST service. Integration tests require that you stand up not only your product but also the components with which you integrate. For this reason, they require more time and effort than unit tests. They are often times the second most frequently used test.
 
 ### End to End {#end-to-end}
-The end to end test is designed to test through your stack starting at the front end. The tests require the most time and effort to write and maintain. For this reason, they often represent the smallest portion of your tests.
+The end-to-end test is designed to test through your stack starting at the front end. The tests require the most time and effort to write and maintain. For this reason, they often represent the smallest portion of your tests.
 
-For further reading take a look at a the list of curated resources
+For further reading take a look at the list of curated resources
 
 * [https://martinfowler.com/articles/practical-test-pyramid.html](https://martinfowler.com/articles/practical-test-pyramid.html)
 
@@ -310,7 +310,7 @@ For further reading take a look at a the list of curated resources
 As you ship your application into production you want to make sure that your logs can be processed and aggregated easily. Designing your application in this fashion will allow the platform to treat all application logs the same. Additionally, it allows for providing a base set of services your organization will need to support and operate your application. A few examples include, access to logs for debugging as well as setting up alerts for monitoring. The standard practice is to write log entries to stdout. For further information, check out the  [logs](https://12factor.net/logs) section on [12factor.net](https://12factor.net/)
 
 ### Configuration (Design)
-Your application will exist in numerous environments including development, staging and production. For this reason, it is important that your application can be configured easily. Keep in mind that your application is likely to end up on a platform like Kubernetes where managing the lifecycle of an application is important. The standard practice is to expose configuration via granular environment variables. The configuration defines a contract with the tools that manages your application’s lifetime. For further information, check out the [config](https://12factor.net/config) section on [12factor.net](https://12factor.net/)
+Your application will exist in numerous environments including development, staging and production. For this reason, it is important that your application can be configured easily. Keep in mind that your application is likely to end up on a platform like Kubernetes where managing the lifecycle of an application is significant. The standard practice is to expose configuration via granular environment variables. The configuration defines a contract with the tools that manages your application’s lifetime. For further information, check out the [config](https://12factor.net/config) section on [12factor.net](https://12factor.net/)
 
 
 ### Backing Services (Design)
