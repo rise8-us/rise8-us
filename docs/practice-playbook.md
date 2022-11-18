@@ -12,7 +12,6 @@ An engineer on a balanced team is responsible for the technical delivery of a pr
 
 ## Foundation
 **Agile Manifesto Principles**
-
 1. Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.  
 1. Welcome changing requirements, even late in development. Agile processes harness change for the customer’s competitive advantage.
 1. Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.
@@ -27,7 +26,6 @@ An engineer on a balanced team is responsible for the technical delivery of a pr
 1. At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.
 
 ### Rise8 Takes
-
 - Enablement is a primary skillset we practice here at Rise8. Not only building the product but helping build the team's skillset to continue product development.
 - Pair engineers with projects they love.
 - Offer opportunities for engineers to grow and expand.
@@ -41,12 +39,13 @@ An engineer on a balanced team is responsible for the technical delivery of a pr
 ## Discovery
 ---
 
+### Discovery and Framing 
+D&F is a team effort where Product Manager and UI/UX roles will contribute significantly.
+
 ### Build vs Buy Analysis
+Engineers evaluate existing FOSS, Commercial, and Government Off the Shelf. Below are some helpful questions to get started in exploring your options and their potential return on investment.
 
-Engineers evaluate already existing options to include commercial or government.
-
-TODO: Separate into groups (Build & Purchase/Use)
-
+[todo]: # "Separate into groups (Build & Purchase/Use)"
 
 - Is there an offering that sufficently meets the team's requirements
 - Build, operate, maintain, and upgrade cost Vs buy and licensing cost?
@@ -61,10 +60,8 @@ TODO: Separate into groups (Build & Purchase/Use)
 
 
 ### Technology Stack
-
-**We choose the right Tech stack for the problem space.**
-
-**Here are a few things to consider when selecting tools and technologies**
+**We choose the right Tech stack for the problem space.**  
+**Here are a few things to consider when selecting tools and technologies**   
   
 1. Is training necessary? What is the learning curve? How much documentation is available? Is it good documentation?
 1. Are the skills and knowledge required common, or is the technology very niche?
@@ -83,19 +80,16 @@ TODO: Separate into groups (Build & Purchase/Use)
 
 ## Building an MVP
 ---
-
-Proof of Concept >> Prototype >> MVP
+Proof of Concept --> Prototype --> MVP
 
 ### Proof of Concept
-
-The goal of a Proof of Concept is for quick applied Technical Discovery to learn information to empower decision making. It can be comprised of pseudo-code, code-fragments, and/or diagrams that depict how the systems communicate. Outcome should be to validate & verify if feasible to accomplish, becomes the reference to for the prototype.
+The goal of a Proof of Concept is for quick applied technical discovery to learn information and empower decision making. It can be comprised of pseudo-code, code-fragments, and/or diagrams that depict how the systems communicate. Outcome should be to validate & verify if feasible to accomplish, becomes the reference to for the prototype.
 
 Should we use best practices when building a proof of concept?
   - Not required, but encouraged
   - Use as needed to explain the proposed concept
 
 ### Prototype
-
 The goal of a Prototype is to demo limited functionality to end users in an ideal/sandbox environment and help teams evaluate risk. This becomes a candidate for the initial MVP. Code should follow best practices unless it would be a severe time sync to implement.
 
 Should we use best practices when building a prototype?
@@ -106,8 +100,7 @@ What types of outcomes/information should the prototype produce?
 - User traction/Customer feedback
 
 ### MVP
-
-An MVP builds off of a Prototype to add in further functionality and error handling, and integrate with a production environment.
+An MVP builds on a Prototype by adding functionality, error handling, and integratation with a production environment.
 
 What defines an MVP?
 - Full functionality
@@ -120,74 +113,19 @@ Should we use best practices when building an MVP?
 ## Systems Design and Architecture
 ---
 
-### Architecture - Marshall/JB
+### Architecture
+We will use `SPIKES` in the issue tracking system to document descsions that impact structure, non-functional characteristics, dependencies, interfaces, or construction techniques.  A Spike should be short andI caputures the specific context around the decsion.  A Spike will have a Title, Status, Context, Descsion, and Consequences section. Title Spikes with a short Noun phrases such as "SPIKE: Caching with Redis". Status can be relected by the state of the issue in the issue tracking system. Context documents the technical and business forces at play, verbage should be value neutral. Decision documents the why and how we choost to respond to the forces. Finally consequences documents any risks involved with the descion.
 
-**[Example](https://playbook.obvious.in/2f06a1c7eaa542098251719a1f083d54)**  
-*We will keep a collection of records for "architecturally significant" decisions: those that affect the structure, non-functional characteristics, dependencies, interfaces, or construction techniques.
+It is good to keep a record of reversed decisions, and why it was reversed.  It is common for old failed descions to resurface with out historical knowledge in long running projects
 
-An architecture decision record is a short text file in a format similar to an Alexandrian pattern. (Though the decisions themselves are not necessarily patterns, they share the characteristic balancing of forces.) Each record describes a set of forces and a single decision in response to those forces. Note that the decision is the central piece here, so specific forces may appear in multiple ADRs.
+### Design Patterns and Best Practices
+We rely heavily on existing best practices and design patters both for their proven capabilities as well as providing a common and well known means of solving a problem. Patterns and practices make for engineer to move between projects.  However there mayb times we need to deviate such as, the new pattern leads to increased readbility, maintainability, scalability, and performance.  Note a performance in and of itself is not typically engough to justify a deviation.  
 
-We will keep ADRs in the project repository under doc/arch/adr-NNN.md
-
-We should use a lightweight text formatting language like Markdown or Textile.
-
-ADRs will be numbered sequentially and monotonically. Numbers will not be reused.
-
-If a decision is reversed, we will keep the old one around, but mark it as superseded. (It's still relevant to know that it was the decision, but is no longer the decision.)
-
-We will use a format with just a few parts, so each document is easy to digest. The format has just a few parts.
-
-Title These documents have names that are short noun phrases. For example, "ADR 1: Deployment on Ruby on Rails 3.0.10" or "ADR 9: LDAP for Multitenant Integration"
-
-Context This section describes the forces at play, including technological, political, social, and project local. These forces are probably in tension, and should be called out as such. The language in this section is value-neutral. It is simply describing facts.
-
-Decision This section describes our response to these forces. It is stated in full sentences, with active voice. "We will ..."
-
-Status A decision may be "proposed" if the project stakeholders haven't agreed with it yet, or "accepted" once it is agreed. If a later ADR changes or reverses a decision, it may be marked as "deprecated" or "superseded" with a reference to its replacement.
-
-Consequences This section describes the resulting context, after applying the decision. All consequences should be listed here, not just the "positive" ones. A particular decision may have positive, negative, and neutral consequences, but all of them affect the team and project in the future.
-
-The whole document should be one or two pages long. We will write each ADR as if it is a conversation with a future developer. This requires good writing style, with full sentences organized into paragraphs. Bullets are acceptable only for visual style, not as an excuse for writing sentence fragments. (Bullets kill people, even PowerPoint bullets.)*
-
-
-
-### Design Patterns and Principles
-
-When solving a problem or designing new features the engineer should consider patterns and principle before implementations.  Practice and patterns often produce performant, maintainable code.  There are times when you may need to deviate or create your own patterns.  In these cases you should document your the reason for your desing decision.
-
-*Build list of common patterns and principles*
-- YAGNI You aint gonna Need it  
-Don't spend to much time future proofing or adding features you may never use.  
-
-- DRY don't repeat yourself  
-Minimize the amount of duplicated code, consider using interfaces, abstractions, utilties or patterns to eliminate repeated logic.  
-
-- SRP Single Responsibility principle  
-Make classes packages modules that solve one problem.
-- Open/Closed
-
-- Liskov Substitution
-
-- Interfac Segregation
-
-- Dependency Inversion
-
-- KISS Keep it super simple
-
-- GoF Patterns
-
-- DDD Domain Driven Design  
-Align software on business requirements not technical requirements
-
-
-### Supplemental Materials
-
-- Security requirements - full process architecture diagram
+[todo]: # "Add resources for existing design patterns"
 
 
 ### Technical Debt
-
-Technical debt can be defined as aspects of our code that will slow down future development. Debt can be intentional or unintentional but must be managed. Incurring too much technical debt can lead to a reduction in productivity, maintainability and testability which in turn leads to unhappy employees and decreased organizational performance. Engineers are responsible for making technical debt visible. Here are a few ways to mitigate and manage technical debt in your products:
+Technical debt can be defined as aspects of our code that will slow down future development. Debt can be intentional or unintentional but must be managed. Incurring too much technical debt can lead to a reduction in productivity, maintainability and testability which in turn leads to unhappy employees, decreased organizational performance, and lack of business outcomes. Engineers are responsible for making technical debt visible. Here are a few ways to mitigate and manage technical debt in your products:
 
 1. Keep a log of debt on your project for future conversations
 1. Discuss during backlog grooming
@@ -195,37 +133,58 @@ Technical debt can be defined as aspects of our code that will slow down future 
 1. Familiarize yourself with common design & architecture patterns
 1. Be aware of new technologies
 
-### Acceptance Criteria
+## Cerimonies
+---
+### Iterative Planning Meeting (IPM)
+[todo]: # "Align with PMs"
+The IPM selects the work that will be done in the next cycle typically 1-2 week sprints. It is our reccomendation to target work as follows.  
+**Target ranges**
+- 30% - 50% Feature
+- 15% - 30% Innovation/Tech debt sometimes call chore
+- 5% - 20% bug
 
+When conducting an IPM the team will address:  
+**Acceptance Criteria**
 Engineers can help the team by reviewing acceptance criteria before the sprint begins. The acceptance criteria should be clear and free of interpretation.
 
-
-## Practices
----
-
-Ceremonies
-
-### Story Point
-
+**Story Point**
 Engineers can help the team by helping to point stories. They can help estimate the amount or complexity of the work. Since engineers understand the work involved to fulfill a requirement,  they can ensure that stories are granular and right sized.
 
-### Pair Programming
 
-Rotate pairs daily? after ticket? weekly?
+[TODO]: # "define feature, bug Innovation/tech debt"
 
+**Feature**
+A feature is something that provides new capabibilties or improves end user experience. A Feature will often have a story that reads something like this. As a: xxx, I want: xxx, So That xxx. A feature should also have an acceptance criteria or definition of done.
 
+**Innovation / Refactoring**
+Innovation is proactive tech debt management.  Innovation work is time spent incorporating **new** libraries, patterns, or services to make the code base easier to maintain, read, secure, and scale, or add capabilities. Innovation work should be closely evaluated to ensure that it provides a return on investment. Avoid innovation for innovation sake there must be clearly definable advantage.
 
-Pair programming is a development technique where two developers author software using the same computer. In person, the computer is outfitted with two keyboards, two monitors and two mice. In a remote environment one user can share the screen with another via collaboration software such as [Zoom](https://zoom.us/) and Live Share. There are two roles in pair programming:
-
-Driver: The person who is writing the code.
-Navigator: Helps the driver navigate code development process. They can write code in the form of suggestions or corrections.
-
-Pair programming has many benefits that include:
+Refactoring is an oppurtunity drive down existing technical debt, optimize, and re-architect the codebase. Refactoring keeps code simple, decoupled, easily read, and painlessly scaled. Engineers often complain about old programing languages as if the language is root problem when real problem is old messy spagehetti code.
 
 1. Knowledge sharing (both domain and technical knowledge)
 2. Immediate code reviews
 3. Improved interpersonal communication
 4. Reduction in code defects
+
+
+**Bug**
+Any work being done to correct unexpected behaviors or faults that are inconsistent with the desired coded intent.
+
+**NOTE**
+Security is a fundamental part of software developemnt and as such can be characterized to fit in all three of the categories as needed.  In high compliance environments where stories are created to address security controls from Compliance tool such as SD Elements the team may want a seprate category to cover this work.
+
+### Standup
+A quick 10-15 min meeting typically held at the begining of the day. Team membes will give a **few** sentences on what the accomplished yesterday, planning to do today, and any blockers they may have.  If greater detial is required coordinate a followon discisson with the relvant team members.
+
+### Retro
+A meeting to reflect on the past work cycle and identify what worked what didn't and any actions needed to be taken going forward.  Release some stress while looking forward to the making the next work cycle better. This is also a good time to call out your team members on their accomplishments.
+## Pair Programming
+We believe there is great value in paired programing and advocate it as the first option.  Pairing helps train inexperienced devs, allows for the propagation of tips and techniques, and provides accountability. 
+
+Pair programming is a development technique where two developers author software using the same computer. In person, the computer is outfitted with two keyboards, two monitors and two mice. In a remote environment one user can share the screen with another via collaboration software such as [Zoom](https://zoom.us/) and Live Share. There are two roles in pair programming:
+
+Driver: The person who is writing the code.
+Navigator: Helps the driver navigate code development process. They can write code in the form of suggestions or corrections.
 
 Here are few helpful hints when pairing:
 
@@ -234,30 +193,9 @@ Here are few helpful hints when pairing:
 3. Be open to new ideas and constructive criticism
 4. Sometimes pairing might not be the best approach. Feel free to solo when it makes sense. But remember, committed code requires a peer review.
 
-
-
-#### Mentoring
-
-Code reviews can be an essential function for teaching developers something new about a language, a framework, or general software design principles. It's always OK to leave comments that help a developer learn something new. Sharing knowledge is part of improving the code health of a system over time. Just keep in mind that if your comment is purely educational but not critical to meeting the standards described in this document, prefix it with "Nit: "or otherwise indicate that the author doesn't need to resolve it in this merge request.
-
-
-#### Resolving Conflicts
-
-In any conflict on a code review, the first step should always be for the developer and reviewer to reach an agreement.
-
-When coming to consensus becomes especially difficult, it can help to have a face-to-face meeting or a video conference between the reviewer and the author, instead of just trying to resolve the conflict through code review comments. (If you do this, though, make sure to record the discussion results as a comment on the merge request for future readers.)
-
-If that doesn't resolve the situation, the most common way to resolve it would be to escalate. Often the escalation path is to a broader team discussion, having a Technical Lead weigh in, asking for a decision from a maintainer of the code, or asking an Eng Manager to help.
-
-Don't let a merge request sit around because the author and the reviewer can't agree.
-
-_This section was derived, with modifications, from [Google Engineering Practices Documentation](https://github.com/google/eng-practices)_
-
 ## Development
 ---
-
 ### Test Driven Development
-
 Test Driven Development is software development practice. The process starts with authoring a failing test and then implementing the functionality required for the test to succeed. Often times referred to as “Red Green Refactor”, it consists of three distinct steps (red-green-refactor):
 
 1. Author a failing test
@@ -265,7 +203,6 @@ Test Driven Development is software development practice. The process starts wit
 3. Refactor
 
 ### Code Review
-
 The primary purpose of code review is to make sure that the overall code health of the project's codebase is improving over time, and a series of trade-offs have to be balanced.
 
 First, developers must be able to _make progress_ on their tasks. If you never submit an improvement to the codebase, then the codebase never improves. Also, if a reviewer makes it very difficult for _any_ change to go in, developers are disincentivized to improve in the future.
@@ -284,189 +221,122 @@ A key point here is that there is no such thing as "perfect" code—there is onl
 
 Reviewers should _always_ feel free to leave comments expressing that something could be better, but if it's not very important, prefix it with something like "Nit: "to let the author know that it's just a point of polish that they could choose to ignore (Nit means nit-pick).
 
-
-
 Note: Nothing in this document justifies checking in merge requests that _worsen_ the system's overall code health. The only time you would do that would be in an emergency.
 
 - Aspects of software design are seldom a pure style issue or just a personal preference**.** They are based on underlying principles and should be weighed on those principles, not simply by subjective opinion. Sometimes there are a few valid options. If the author can demonstrate (either through data or based on solid engineering principles) that several approaches are equally good, the reviewer should accept the author's preference. Otherwise, the choice is dictated by standard principles of software design.
 - If no other rule applies, then the reviewer may ask the author to be consistent with the current codebase, as long as that doesn't worsen the system's overall code health.
 - On matters of style, the style guide is the absolute authority. Any purely style point (whitespace, etc.) not in the style guide is a personal preference. The style should be consistent with what is there. If there is no previous style, accept the author's style.
 
-### Pointing and Scheduling work (Needs alignment with PMs)
 
-**Pointing**
-All work should be pointed and labeled with the category. This allows you to see a break down of work and identify trends and make corrections when neccessary. Feature velocity is down, why? Oh we spent a lot of time on refactoring.  Why are we spending a large amount of time on refactoring, is it because we are rushing in new features?  Having this data is super helpful especially when doing retros.
+**An oppurtunity for sharing knowledge**   
+Code reviews can be an essential function for teaching developers something new about a language, a framework, or general software design principles. It's always OK to leave comments that help a developer learn something new. Sharing knowledge is part of improving the code health of a system over time. Just keep in mind that if your comment is purely educational but not critical to meeting the standards described in this document, prefix it with "Nit: "or otherwise indicate that the author doesn't need to resolve it in this merge request.
 
-The Product Manager discipline is sometimes only concerned with feature work pointing. Labeling the work allows you to pull out an accurate Feature velocity.
 
-**Target ranges**
-- 30% - 50% Feature
-- 15% - 30% Innovation/Tech debt sometimes call chore
-- 5% - 20% bug
+**Resolving Conflicts**   
+In any conflict on a code review, the first step should always be for the developer and reviewer to reach an agreement.
 
-**Feature**
-A feature is something that provides new capabibilties or improves end user experience.
+When coming to consensus becomes especially difficult, it can help to have a face-to-face meeting or a video conference between the reviewer and the author, instead of just trying to resolve the conflict through code review comments. (If you do this, though, make sure to record the discussion results as a comment on the merge request for future readers.)
 
-**Innovation / Refactoring**
-Innovation is proactive tech debt management.  Innovation work is time spent incorporating **new** libraries, patterns, or services to make the code base easier to maintain, scale, and or add features. Innovation work should be closely evaluated to ensure that it is a worth while return on investment; avoid innovating for the sake of innovation without providing any meaningful value.
+If that doesn't resolve the situation, the most common way to resolve it would be to escalate. Often the escalation path is to a broader team discussion, having a Technical Lead weigh in, asking for a decision from a maintainer of the code, or asking an Eng Manager to help.
 
-Refactoring is an oppurtunity drive down existing technical debt, optimize, and re-architect the codebase so the code can remain simple, decoupled, easily read, and painlessly scaled. Engineers often complain about old programing languages as if the language is root problem when real problem is old messy code bases.
+Don't let a merge request sit around because the author and the reviewer can't agree.
 
-Engineers should not shy away from performing large scale refactors (agreed on by the team) that improve the applications performance, ease of use, and deployability. These refactors can range from UI changes to entire revisions of the database schema.
+_This section was derived, with modifications, from [Google Engineering Practices Documentation](https://github.com/google/eng-practices)_
 
-**Bug**
-Any work being done to correct unexpected behaviors or faults that are inconsistent with the desired coded intent.
-
-**NOTE**
-Security is a fundamental part of software developemnt and as such can be characterized to fit in all three of the categories as needed.  In a high compliance environment where stories are created to address security controls from Compliance tool such as SD Elements the team may want a seprate category to cover this work.
-
-### Git ops
-- git hooks
-- commit description
-- rebase v merge (we prefer rebase w/ squash)
-- Merge/Pull Request etiquette
-  - Comments/Suggestions/nitpicks
-  - Number of engineers
-  - Merge size
-- branch naming scheme
-
-#### Code Review
-
-Code review is necessary whether you're pairing or not. We believe pairing serves as a "code review" in and of itself and therefore additional code reviews are not necessary. When soloing, Merge/Pull Requests should be used to review code.
-Regardless of MR/PR or commiting directly to main/master, testing needs to be completed on new functionality before it is committed and pushed to main/master.
-`#YouBreakItYouBuyIt`
-
-#### HOOKS
+## Git ops
+---
+Git is todays standard for source control.
+### HOOKS
 We strongly encourage the use of commit hooks to further ensure code quality. These hooks can range from enforcing commit formats to running unit tests and may be left up to the team to decide.
 
-#### MERGE REQUEST COMMENTS
+### COMMIT MESSAGES
+Commit messages should be a brief, concise description in imperative tense of what the commit adds, with the appropriate authors (alternating authors or using tools such as git with .git-together), and the ID of the corresponding story. Using industry standards such as [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/#summary) are not required but teams may choose to follow any given industry standard.
+
+### MERGE REQUEST COMMENTS
 We encourage comments/suggestions/questions/discussion/etc. on MR per our belief in strong opinions loosely held >> better resulting code
 
-#### REBASE
+### REBASE
 We encourage squashing and rebasing to preserve the cleanliness and readability of the git history on the master branch. This should only be performed by an engineer that understands the rebasing process in order to avoid causing irreparable damage to the master branch. If done correctly, there should be no explicit merge commits.
 
 NOTE: Certain technologies (i.e. GitLab) default behavior creates merge commits. This can be changed.
 
-#### COMMIT MESSAGES
-Commit messages should be a brief, concise description in imperative tense of what the commit adds, with the appropriate authors (alternating authors or using tools such as git with .git-together), and the ID of the corresponding story. Using industry standards such as [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/#summary) are not required but teams may choose to follow any given industry standard.
+### BRANCHING
+GitFlow or Trunk based branching is prefered.
 
-#### BRANCH NAMING
 Branch naming should be clear and concise. We recommend the convention of including the story ID followed by a few words for the branch's purpose, using dashes (-) as the delimiter.
 
-#### BRANCH MAINTENANCE
 Cleanup/remove branches post merge completion. Developers should be wary and not have too many inactive/stale branches linger. Abandoned branches should be removed to avoid Git pollution.
 
 
-
-### CI/CD Pipeline
-
-**Continuous Integration**
-
+## CI/CD Pipeline
+---
+**Continuous Integration**   
 We beleive CI begins at the local development env. This includes the tools to run automated tests, linting, and other checks on branches **BEFORE** you merge up.
-
-
 
 We believe CI is non-negotiable and must begin at the initial conception of development to ensure comprehensive software security, testing, and fast feedback on the main branch health. Furthermore it empowers the ability of the team to hold to agile practices.  
 
-CI stages should include at a minimum
+**CI stages should include at a minimum**
 - linting
 - unit tests
 - static code analysis
 - dependency scans
 
-
-**Continuous Delivery**
+**Continuous Delivery**   
 We believe that any merge to main should be able to deploy to production and main should always be deployable. Merges should be self-contained and not dependant upon another branch.
 
 ## Testing
 ---
-
 Building testing into our products provides us the confidence that we need to quickly deliver new features without the fear of breaking our products. The test pyramid depicts the types of test we can author along with the general distribution.
 
-
 ### Unit
-
-The unit test is designed to test a small, singular component/function/method. The tests are easy to author and maintain and thus often represent the largest portion of tests within the code.
-
+The unit test is designed to test a small, singular component/function/method. Target the public methods of your classes, private and protected methods are part of the public unit. The tests are easy to author and maintain, fast to run. Unit Tests represent the largest portion of tests within the code.
 
 ### Contract Testing
-
 TDD for micro service architecture, contracts are written on what will be consumed and then consumers and producers are tested against these contracts.  Eliminates the need for test environments that have all services running and at a specific version.
 
-
 ### Integration
-
 The integration test is designed to test between components. A typical example might be integrating with a database or a provided REST service. Integration tests require that you stand up not only your product but also the components with which you integrate. For this reason, they require more time and effort than unit tests. They often times are the second most frequently used test.
 
-
 ### End to End {#end-to-end}
-
 The end to end test is designed to test through your stack starting at the front end. The tests require the most time and effort to write and maintain. For this reason, they often represent the smallest portion of your tests.
 
 For further reading take a look at a the list of curated resources
-
-
 
 * [https://martinfowler.com/articles/practical-test-pyramid.html](https://martinfowler.com/articles/practical-test-pyramid.html)
 
 ## Operating Apps
 ---
-- Logging
-- Observability
-- Alerting
-- Incident response
-
-
-## Modern Applications
-
-
 ### Logging (Operating apps)
-
 As you ship your application into production you want to make sure that your logs can be processed and aggregated easily. Designing your application in this fashion will allow the platform to treat all application logs the same. Additionally, it allows for providing a base set of services your organization will need to support and operate your application. A few examples include, access to logs for debugging as well as setting up alerts for monitoring. The standard practice is to write log entries to stdout. For further information, check out the  [logs](https://12factor.net/logs) section on [12factor.net](https://12factor.net/)
 
-
 ### Configuration (Design)
-
 Your application will exist in numerous environments including development, staging and production. For this reason, it is important that your application can be configured easily. Keep in mind that your application is likely to end up on a platform like Kubernetes where managing the lifecycle of an application is important. The standard practice is to expose configuration via granular environment variables. The configuration defines a contract with the tools that manages your application’s lifetime. For further information, check out the [config](https://12factor.net/config) section on [12factor.net](https://12factor.net/)
 
 
 ### Backing Services (Design)
-
 As you build out your application, there will be a set of services you wish to consume. You should consider what services are needed and if they are provided as part of the platform offering. Configuring these services is as simple as adding environment variables to your configuration (see above). Listed below are common services:
 
-
-
 1. Identity Management (ie Keycloak)
-2. Databases (ie Relational, NoSQL)
-3. Storage (ie S3, Minio, Volumes)
-4. Message Queues (ie RabbitMQ, Kafka)
-5. Email (ie SMTP)
-
+1. Databases (ie Relational, NoSQL)
+1. Storage (ie S3, Minio, Volumes)
+1. Message Queues (ie RabbitMQ, Kafka)
+1. Email (ie SMTP)
 
 ### Monitoring (Operating)
-
 Monitoring your application will help you be successful. Monitoring can help you understand how your application is being used and by whom. Monitoring can help you understand whether your application is functioning. When you start building your application consider the following:
-
-
 
 1. Are health endpoints available in my application? What engineering aspects should be part of the health endpoint? How are the health endpoints monitored?
 2. Are there important product metrics to capture? Are there any technologies available to support metrics collection (ie Elasticsearch, Kibana, Grafana)?
 3. Are there technologies available to support alerting?
 
 
-### Additional Resources
-
-
-
+## Additional Resources
+---
 * [https://12factor.net](https://12factor.net/)
 
 
-
-
-### Recommended Reads
-
-
-
+## Recommended Reads
+---
 * [Clean Code by Robert C. Martin](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
 * [Composing Software by Eric Elliot](https://www.amazon.com/Composing-Software-Exploration-Programming-Composition/dp/1661212565)
 * [Design Patterns by Gang of Four](https://www.amazon.com/Design-Patterns-Object-Oriented-Addison-Wesley-Professional-ebook/dp/B000SEIBB8)
