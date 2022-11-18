@@ -228,7 +228,7 @@ Note: Nothing in this document justifies checking in merge requests that _worsen
 - On matters of style, the style guide is the absolute authority. Any purely style point (whitespace, etc.) not in the style guide is a personal preference. The style should be consistent with what is there. If there is no previous style, accept the author's style.
 
 
-**An oppurtunity for sharing knowledge**   
+**An opportunity for sharing knowledge**   
 Code reviews can be an essential function for teaching developers something new about a language, a framework, or general software design principles. It's always OK to leave comments that help a developer learn something new. Sharing knowledge is part of improving the code health of a system over time. Just keep in mind that if your comment is purely educational but not critical to meeting the standards described in this document, prefix it with "Nit: "or otherwise indicate that the author doesn't need to resolve it in this merge request.
 
 
@@ -283,6 +283,7 @@ We believe CI is non-negotiable and must begin at the initial conception of deve
 
 **Continuous Delivery**   
 We believe that any merge to main should be able to deploy to production and main should always be deployable. Merges should be self-contained and not dependant upon another branch.
+[TODO]: # "Expand the section on CI"
 
 ## Testing
 ---
