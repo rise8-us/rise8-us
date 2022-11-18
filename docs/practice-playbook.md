@@ -301,6 +301,8 @@ The integration test is designed to test between components. A typical example m
 ### End to End {#end-to-end}
 The end-to-end test is designed to test through your stack starting at the front end. The tests require the most time and effort to write and maintain. For this reason, they often represent the smallest portion of your tests.
 
+[TODO]: # "Add Acceptance test blurb"
+
 For further reading take a look at the list of curated resources
 
 * [https://martinfowler.com/articles/practical-test-pyramid.html](https://martinfowler.com/articles/practical-test-pyramid.html)
