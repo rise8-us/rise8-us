@@ -11,7 +11,7 @@ An engineer on a balanced team is responsible for the technical delivery of a pr
 > “A team management philosophy that has people with a variety of skills and perspectives that support each other towards a shared goal.” - balancedteam.org
 
 ## Foundation
-**Agile Manifesto Principles**
+**Agile Manifesto Principles**  
 1. Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.  
 1. Welcome changing requirements, even late in development. Agile processes harness change for the customer’s competitive advantage.
 1. Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.
@@ -138,25 +138,25 @@ Technical debt can be defined as aspects of our code that will slow down future 
 ### Iterative Planning Meeting (IPM)
 [todo]: # "Align with PMs"
 The IPM selects the work that will be done in the next cycle typically 1-2 week sprints. It is our recommendation to target work as follows.  
-**Target ranges**
+**Target ranges**  
 - 30% - 50% Feature
 - 15% - 30% Innovation/Tech debt sometimes call chore
 - 5% - 20% bug
 
 When conducting an IPM the team will address:  
-**Acceptance Criteria**
+**Acceptance Criteria**  
 Engineers can help the team by reviewing acceptance criteria before the sprint begins. The acceptance criteria should be clear and free of interpretation.
 
-**Story Point**
+**Story Point**  
 Engineers can help the team by helping to point stories. They can help estimate the amount or complexity of the work. Since engineers understand the work involved to fulfill a requirement,  they can ensure that stories are granular and right sized.
 
 
 [TODO]: # "define feature, bug Innovation/tech debt"
 
-**Feature**
+**Feature**  
 A feature is something that provides new capabilities or improves end user experience. A Feature will often have a story that reads something like this. As a: xxx, I want: xxx, So That xxx. A feature should also have an acceptance criteria or definition of done.
 
-**Innovation / Refactoring**
+**Innovation / Refactoring**  
 Innovation is proactive tech debt management.  Innovation work is time spent incorporating **new** libraries, patterns, or services to make the code base easier to maintain, read, secure, and scale, or add capabilities. Innovation work should be closely evaluated to ensure that it provides a return on investment. Avoid innovation for innovation’s sake there must be clearly definable advantage.
 
 Refactoring is an opportunity drive down existing technical debt, optimize, and re-architect the codebase. Refactoring keeps code simple, decoupled, easily read, and painlessly scaled. Engineers often complain about old programing languages as if the language is root problem when real problem is old messy spaghetti code.
@@ -167,10 +167,10 @@ Refactoring is an opportunity drive down existing technical debt, optimize, and 
 4. Reduction in code defects
 
 
-**Bug**
+**Bug**  
 Any work being done to correct unexpected behaviors or faults that are inconsistent with the desired coded intent.
 
-**NOTE**
+**NOTE**  
 Security is a fundamental part of software development and as such can be characterized to fit in all three of the categories as needed.  However, you may to create your own category for security work this is common in high compliance environments.
 
 ### Standup
@@ -275,7 +275,7 @@ We beleive CI begins at the local development env. This includes the tools to ru
 
 We believe CI is non-negotiable and must begin at the initial conception of development to ensure comprehensive software security, testing, and fast feedback on the main branch health. Furthermore, it empowers the ability of the team to hold to agile practices.  
 
-**CI stages should include at a minimum**
+**CI stages should include at a minimum**  
 - linting
 - unit tests
 - static code analysis
