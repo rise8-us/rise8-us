@@ -282,7 +282,8 @@ We believe CI is non-negotiable and must begin at the initial conception of deve
 - dependency scans
 
 **Continuous Delivery**   
-We believe that any merge to main should be able to deploy to production and main should always be deployable. Merges should be self-contained and not dependant upon another branch.
+We believe that any merge to main should be able to deploy to production and main should always be deployable. Merges should be self-contained and not dependant upon another branch.  
+
 [TODO]: # "Expand the section on CI"
 
 ## Testing
