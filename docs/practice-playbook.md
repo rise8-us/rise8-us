@@ -261,7 +261,7 @@ We encourage squashing and rebasing to preserve the cleanliness and readability 
 NOTE: Certain technologies (i.e. GitLab) default behavior creates merge commits. This can be changed.
 
 ### BRANCHING
-GitFlow or Trunk based branching is preferred.
+Trunk based or short-lived feature branching is preferred.
 
 Branch naming should be clear and concise. We recommend the convention of including the story ID followed by a few words for the branch's purpose, using dashes (-) as the delimiter.
 
