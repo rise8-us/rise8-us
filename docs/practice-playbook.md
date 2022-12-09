@@ -12,7 +12,7 @@ An engineer on a balanced team is responsible for the technical delivery of a pr
 
 ## Foundation
 **Agile Manifesto Principles**  
-1. Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.  
+1. Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.
 1. Welcome changing requirements, even late in development. Agile processes harness change for the customer’s competitive advantage.
 1. Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.
 1. Business people and developers must work together daily throughout the project.
@@ -30,7 +30,7 @@ An engineer on a balanced team is responsible for the technical delivery of a pr
 - Pair engineers with projects they love.
 - Offer opportunities for engineers to grow and expand.
 - Trust allows agile teams to communicate quickly and respond rapidly to changes as they emerge. Without sufficient trust, team members can waste effort and energy hoarding information, forming cliques, dodging blame, and covering their tracks.
-  - Trust your team is making the best decisions with the information known at the moment, with or without your presence. You and your team have a common goal, there is more than one way to reach it.
+- Trust your team is making the best decisions with the information known at the moment, with or without your presence. You and your team have a common goal, there is more than one way to reach it.
 - Technical facts and data overrule opinions and personal preferences.
 - Use best practices and design patterns unless justified.
 - Adheres to the team's code contract for styling.
@@ -137,7 +137,7 @@ Technical debt can be defined as aspects of our code that will slow down future 
 ---
 ### Iterative Planning Meeting (IPM)
 [todo]: # "Align with PMs"
-The IPM selects the work that will be done in the next cycle typically 1-2 week sprints. It is our recommendation to target work as follows.  
+The IPM selects the work that will be done in the next cycle typically 1-2 week sprints. It is our recommendation to target work as follows.   
 **Target ranges**  
 - 30% - 50% Feature
 - 15% - 30% Innovation/Tech debt sometimes call chore
@@ -245,7 +245,7 @@ _This section was derived, with modifications, from [Google Engineering Practice
 
 ## Git ops
 ---
-Git is todays standard for source control.
+Git is today's standard for source control.
 ### HOOKS
 We strongly encourage the use of commit hooks to further ensure code quality. These hooks can range from enforcing commit formats to running unit tests and may be left up to the team to decide.
 
@@ -271,7 +271,7 @@ Cleanup/remove branches post merge completion. Developers should be wary and not
 ## CI/CD Pipeline
 ---
 **Continuous Integration**   
-We beleive CI begins at the local development env. This includes the tools to run automated tests, linting, and other checks on branches **BEFORE** you merge up.
+We believe CI begins at the local development env. This includes the tools to run automated tests, linting, and other checks on branches **BEFORE** you merge up.
 
 We believe CI is non-negotiable and must begin at the initial conception of development to ensure comprehensive software security, testing, and fast feedback on the main branch health. Furthermore, it empowers the ability of the team to hold to agile practices.  
 
@@ -298,7 +298,7 @@ TDD for microservice architecture, contracts are written on what will be consume
 ### Integration
 The integration test is designed to test between components. A typical example might be integrating with a database or a provided REST service. Integration tests require that you stand up not only your product but also the components with which you integrate. For this reason, they require more time and effort than unit tests. They are often times the second most frequently used test.
 
-### End to End {#end-to-end}
+### End to End (E2E)
 The end-to-end test is designed to test through your stack starting at the front end. The tests require the most time and effort to write and maintain. For this reason, they often represent the smallest portion of your tests.
 
 [TODO]: # "Add Acceptance test blurb"
