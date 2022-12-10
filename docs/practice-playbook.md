@@ -12,18 +12,19 @@ An engineer on a balanced team is responsible for the technical delivery of a pr
 
 ## Foundation
 **Agile Manifesto Principles**  
+
 1. Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.
-1. Welcome changing requirements, even late in development. Agile processes harness change for the customer’s competitive advantage.
-1. Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.
-1. Business people and developers must work together daily throughout the project.
-1. Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done.
-1. The most efficient and effective method of conveying information to and within a development team is face-to-face conversation.
-1. Working software is the primary measure of progress.
-1. Agile processes promote sustainable development. The sponsors, developers, and users should be able to maintain a constant pace indefinitely.
-1. Continuous attention to technical excellence and good design enhances agility.
-1. Simplicity – the art of maximizing the amount of work not done – is essential.
-1. The best architectures, requirements, and designs emerge from self-organizing teams.
-1. At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.
+2. Welcome changing requirements, even late in development. Agile processes harness change for the customer’s competitive advantage.
+3. Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.
+4. Business people and developers must work together daily throughout the project.
+5. Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done.
+6. The most efficient and effective method of conveying information to and within a development team is face-to-face conversation.
+7. Working software is the primary measure of progress.
+8. Agile processes promote sustainable development. The sponsors, developers, and users should be able to maintain a constant pace indefinitely.
+9. Continuous attention to technical excellence and good design enhances agility.
+10. Simplicity – the art of maximizing the amount of work not done – is essential.
+11. The best architectures, requirements, and designs emerge from self-organizing teams.
+12. At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.
 
 ### Rise8 Takes
 - Enablement is a primary skillset we practice here at Rise8. Not only building the product but helping build the team's skillset to continue product development.
@@ -139,6 +140,7 @@ Technical debt can be defined as aspects of our code that will slow down future 
 [todo]: # "Align with PMs"
 The IPM selects the work that will be done in the next cycle typically 1-2 week sprints. It is our recommendation to target work as follows.   
 **Target ranges**  
+
 - 30% - 50% Feature
 - 15% - 30% Innovation/Tech debt sometimes call chore
 - 5% - 20% bug
