@@ -3,16 +3,23 @@ site_url: https://engineering.rise8.us
 nav:
   - Home: index.md
   - Practice Playbook: practice-playbook.md
+  - Blog:
+    - blog/github-workflows-with-webhook-actions.md
   - Company: https://rise8.us
 theme:
   name: material
-  logo: https://rise8.us/images/logo-rise8.svg
+  logo: logo-rise8.svg
   favicon: https://rise8.us/images/favicons/cropped-rise8-favicon-32x32.png
   palette:
     primary: black
     accent: red
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
 extra_css:
   - stylesheets/extra.css
+#plugins:
+#  - social
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -20,6 +27,8 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.extra
+  - pymdownx.emoji
 
 
 
