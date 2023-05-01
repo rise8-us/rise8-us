@@ -4,7 +4,7 @@ nav:
   - Home: index.md
   - Practice Playbook: practice-playbook.md
   - Blog:
-    - blog/github-workflows-with-webhook-actions.md
+    - blog/sample.md
   - Company: https://rise8.us
 theme:
   name: material
