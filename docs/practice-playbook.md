@@ -15,7 +15,7 @@ An engineer on a balanced team is responsible for the technical delivery of a pr
 > “A team management philosophy that has people with a variety of skills and perspectives that support each other towards a shared goal.” - balancedteam.org
 
 ## Foundation
-**Agile Manifesto Principles**  
+**Agile Manifesto Principles**
 
 1. Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.
 2. Welcome changing requirements, even late in development. Agile processes harness change for the customer’s competitive advantage.
@@ -44,7 +44,7 @@ An engineer on a balanced team is responsible for the technical delivery of a pr
 ## Discovery
 ---
 
-### Discovery and Framing 
+### Discovery and Framing
 D&F is a team effort where Product Manager and UI/UX roles will contribute significantly.
 
 ### Build vs Buy Analysis
@@ -65,9 +65,9 @@ Engineers evaluate existing FOSS, Commercial, and Government Off the Shelf. Belo
 
 
 ### Technology Stack
-**We choose the right Tech stack for the problem space.**  
-**Here are a few things to consider when selecting tools and technologies**   
-  
+**We choose the right Tech stack for the problem space.**
+**Here are a few things to consider when selecting tools and technologies**
+
 1. Is training necessary? What is the learning curve? How much documentation is available? Is it good documentation?
 1. Are the skills and knowledge required common, or is the technology very niche?
 1. Is the technology mature enough to adopt?
@@ -88,14 +88,14 @@ Engineers evaluate existing FOSS, Commercial, and Government Off the Shelf. Belo
 Proof of Concept --> Prototype --> MVP
 
 ### Proof of Concept
-The Proof of Concept is for quick technical discovery, learning information, and empowering decision-making. It may be comprised of pseudo-code, code-fragments, and/or diagrams that depict how systems communicate or UIs interact. The outcome should validate & verify the concept, and becomes the reference to for the prototype.
+The Proof of Concept is for quick technical discovery, learning information, and empowering decision-making. It may be comprised of pseudo-code, code-fragments, and/or diagrams that depict how systems communicate or UIs interact. The outcome should validate & verify the concept, and becomes the reference for the prototype.
 
 Should we use best practices when building a proof of concept?
   - Not required, but encouraged
   - Use as needed to explain the proposed concept
 
 ### Prototype
-The goal of a Prototype is to demo limited functionality to end users in an ideal/sandbox environment and help teams evaluate risk. This becomes a candidate for the initial MVP. Code should follow best practices unless it would be a severe time sync to implement.
+The goal of a Prototype is to demo limited functionality to end users in an ideal/sandbox environment and help teams evaluate risk. This becomes a candidate for the initial MVP. Code should follow best practices unless it would be a severe time sink to implement.
 
 Should we use best practices when building a prototype?
 - Should try to use best practices, unless severe time sink
@@ -119,12 +119,12 @@ Should we use best practices when building an MVP?
 ---
 
 ### Architecture
-We will use `SPIKES` in the issue tracking system to document decisions that impact structure, non-functional characteristics, dependencies, interfaces, or construction techniques.  A Spike should be short andI captures the specific context around the decision.  A Spike will have a Title, Status, Context, Decision, and Consequences section. Title Spikes with a short Noun phrases such as "SPIKE: Caching with Redis". Status can be selected by the state of the issue in the issue tracking system. Context documents the technical and business forces at play, verbiage should be value neutral. Decision documents the why and how we choose to respond to the forces. Finally, consequences documents any risks involved with the decision.
+We will use `SPIKES` in the issue tracking system to document decisions that impact structure, non-functional characteristics, dependencies, interfaces, or construction techniques.  A Spike should be short and capture the specific context around the decision.  A Spike will have a Title, Status, Context, Decision, and Consequences section. Title Spikes with short Noun phrases such as "SPIKE: Caching with Redis". Status can be selected by the state of the issue in the issue tracking system. Context documents the technical and business forces at play; verbiage should be value neutral. Decision documents the why and how we choose to respond to the forces. Finally, Consequences documents any risks involved with the decision.
 
-It is good to keep a record of reversed decisions, and why it was reversed.  It is common for old failed decisions to resurface without historical knowledge in long-running projects
+It is good to keep a record of reversed decisions, and why it was reversed.  It is common for old failed decisions to resurface without historical knowledge in long-running projects.
 
 ### Design Patterns and Best Practices
-We rely heavily on existing best practices and design patters both for their proven capabilities and providing a common and well known means of solving a problem. Patterns and practices make for engineer to move between projects.  However, there maybe times we need to deviate such as, the new pattern leads to increased readability, maintainability, scalability, and performance.  Note a performance in and of itself is not typically enough to justify a deviation.  
+We rely heavily on existing best practices and design patterns both for their proven capabilities and providing a common and well known means of solving a problem. Patterns and practices make it easier for engineers to move between projects.  However, there may be times we need to deviate such as, the new pattern leading to decreased readability, maintainability, scalability, and/or performance.  Note a performance issue in and of itself is not typically enough to justify a deviation.
 
 [todo]: # "Add resources for existing design patterns"
 
@@ -142,30 +142,30 @@ Technical debt can be defined as aspects of our code that will slow down future 
 ---
 ### Iterative Planning Meeting (IPM)
 [todo]: # "Align with PMs"
-The IPM selects the work that will be done in the next cycle typically 1-2 week sprints. It is our recommendation to target work as follows.   
-**Target ranges**  
+The IPM selects the work that will be done in the next cycle typically 1-2 week sprints. It is our recommendation to target work as follows.
+**Target ranges**
 
 - 30% - 50% Feature
 - 15% - 30% Innovation/Tech debt sometimes call chore
-- 5% - 20% bug
+- 5% - 20% Bugs
 
-When conducting an IPM the team will address:  
-**Acceptance Criteria**  
+When conducting an IPM the team will address:
+**Acceptance Criteria**
 Engineers can help the team by reviewing acceptance criteria before the sprint begins. The acceptance criteria should be clear and free of interpretation.
 
-**Story Point**  
-Engineers can help the team by helping to point stories. They can help estimate the amount or complexity of the work. Since engineers understand the work involved to fulfill a requirement,  they can ensure that stories are granular and right sized.
+**Story Point**
+Engineers can help the team by helping to point stories. They can help estimate the amount or complexity of the work. Since engineers understand the work involved to fulfill a requirement, they can ensure that stories are granular and right sized.
 
 
 [TODO]: # "define feature, bug Innovation/tech debt"
 
-**Feature**  
-A feature is something that provides new capabilities or improves end user experience. A Feature will often have a story that reads something like this. As a: xxx, I want: xxx, So That xxx. A feature should also have an acceptance criteria or definition of done.
+**Feature**
+A Feature is something that provides new capabilities or improves end user experience. A Feature will often have a story that reads something like this. As a: xxx, I want: xxx, So That xxx. A feature should also have an acceptance criteria or definition of done.
 
-**Innovation / Refactoring**  
-Innovation is proactive tech debt management.  Innovation work is time spent incorporating **new** libraries, patterns, or services to make the code base easier to maintain, read, secure, and scale, or add capabilities. Innovation work should be closely evaluated to ensure that it provides a return on investment. Avoid innovation for innovation’s sake there must be clearly definable advantage.
+**Innovation / Refactoring**
+Innovation is proactive tech debt management.  Innovation work is time spent incorporating **new** libraries, patterns, or services to make the code base easier to maintain, read, secure, and scale, or add capabilities. Innovation work should be closely evaluated to ensure that it provides a return on investment. Avoid innovation for innovation’s sake; there must be clearly definable advantage.
 
-Refactoring is an opportunity drive down existing technical debt, optimize, and re-architect the codebase. Refactoring keeps code simple, decoupled, easily read, and painlessly scaled. Engineers often complain about old programing languages as if the language is root problem when real problem is old messy spaghetti code.
+Refactoring is an opportunity drive down existing technical debt, optimize, and re-architect the codebase. Refactoring keeps code simple, decoupled, easily read, and painlessly scaled. Engineers often complain about old programming languages as if the language is the root problem when the real problem is old messy spaghetti code.
 
 1. Knowledge sharing (both domain and technical knowledge)
 2. Immediate code reviews
@@ -173,28 +173,29 @@ Refactoring is an opportunity drive down existing technical debt, optimize, and 
 4. Reduction in code defects
 
 
-**Bug**  
+**Bug**
 Any work being done to correct unexpected behaviors or faults that are inconsistent with the desired coded intent.
 
-**NOTE**  
-Security is a fundamental part of software development and as such can be characterized to fit in all three of the categories as needed.  However, you may to create your own category for security work this is common in high compliance environments.
+**NOTE**
+Security is a fundamental part of software development and as such can be characterized to fit in all three of the categories as needed.  However, you may to create your own category for security work; this is common in high compliance environments.
 
 ### Standup
-A quick 10-15 min meeting typically held at the beginning of the day. Team members will give a **few** sentences on what the accomplished yesterday, planning to do today, and any blockers they may have.  If greater detail is required coordinate a discussion with the relevant team members post standup.
+A quick 10-15 min meeting typically held at the beginning of the day. Team members will give a **few** sentences on what they accomplished yesterday, are planning to do today, and any blockers they may have.  If greater detail is required, coordinate a discussion with the relevant team members post standup.
 
 ### Retro
-A meeting to reflect on the past work cycle and identify what worked what didn't and any actions needed to be taken going forward.  Release some stress while looking forward to the making the next work cycle better. This is also a good time to call out your team members on their accomplishments.
+A meeting to reflect on the past work cycle and identify what worked, what didn't and any actions needed to be taken going forward.  Release some stress while looking forward to the making the next work cycle better. This is also a good time to call out your team members on their accomplishments.
+
 ## Pair Programming
-We believe there is great value in paired programing and advocate it as the first option.  Pairing helps train inexperienced devs, allows for the propagation of tips and techniques, and provides accountability. 
+We believe there is great value in paired programming and advocate it as the first option.  Pairing helps train inexperienced devs, allows for the propagation of tips and techniques, and provides accountability.
 
 Pair programming is a development technique where two developers author software using the same computer. In person, the computer is outfitted with two keyboards, two monitors and two mice. In a remote environment one user can share the screen with another via collaboration software such as [Zoom](https://zoom.us/) and Live Share. There are two roles in pair programming:
 
 Driver: The person who is writing the code.
-Navigator: Helps the driver navigate code development process. They can write code in the form of suggestions or corrections.
+Navigator: Helps the driver navigate the code development process. They can write code in the form of suggestions or corrections.
 
 Here are few helpful hints when pairing:
 
-1. Pairing can be tiring, take breaks often
+1. Pairing can be tiring; take breaks often
 2. Rotate pairs regularly. Each person brings something unique to the table which will improve the codebase as a whole. Swapping pairs also drives both knowledge sharing and alignment across the team.
 3. Be open to new ideas and constructive criticism
 4. Sometimes pairing might not be the best approach. Feel free to solo when it makes sense. But remember, committed code requires a peer review.
@@ -202,7 +203,7 @@ Here are few helpful hints when pairing:
 ## Development
 ---
 ### Test Driven Development
-Test Driven Development is software development practice. The process starts with authoring a failing test and then implementing the functionality required for the test to succeed. Often times referred to as “Red Green Refactor”, it consists of three distinct steps (red-green-refactor):
+Test Driven Development is a software development practice. The process starts with authoring a failing test and then implementing the functionality required for the test to succeed. Often times referred to as “Red Green Refactor”, it consists of three distinct steps (red-green-refactor):
 
 1. Author a failing test
 2. Author just enough code for test to pass
@@ -234,11 +235,11 @@ Note: Nothing in this document justifies checking in merge requests that _worsen
 - On matters of style, the style guide is the absolute authority. Any purely style point (whitespace, etc.) not in the style guide is a personal preference. The style should be consistent with what is there. If there is no previous style, accept the author's style.
 
 
-**An opportunity for sharing knowledge**   
-Code reviews can be an essential function for teaching developers something new about a language, a framework, or general software design principles. It's always OK to leave comments that help a developer learn something new. Sharing knowledge is part of improving the code health of a system over time. Just keep in mind that if your comment is purely educational but not critical to meeting the standards described in this document, prefix it with "Nit: "or otherwise indicate that the author doesn't need to resolve it in this merge request.
+**An opportunity for sharing knowledge**
+Code reviews can be an essential function for teaching developers something new about a language, a framework, or general software design principles. It's always OK to leave comments that help a developer learn something new. Sharing knowledge is part of improving the code health of a system over time. Just keep in mind that if your comment is purely educational but not critical to meeting the standards described in this document, prefix it with "Nit:" or otherwise indicate that the author doesn't need to resolve it in this merge request.
 
 
-**Resolving Conflicts**   
+**Resolving Conflicts**
 In any conflict on a code review, the first step should always be for the developer and reviewer to reach an agreement.
 
 When coming to consensus becomes especially difficult, it can help to have a face-to-face meeting or a video conference between the reviewer and the author, instead of just trying to resolve the conflict through code review comments. (If you do this, though, make sure to record the discussion results as a comment on the merge request for future readers.)
@@ -276,19 +277,19 @@ Cleanup/remove branches post merge completion. Developers should be wary and not
 
 ## CI/CD Pipeline
 ---
-**Continuous Integration**   
+**Continuous Integration**
 We believe CI begins at the local development env. This includes the tools to run automated tests, linting, and other checks on branches **BEFORE** you merge up.
 
-We believe CI is non-negotiable and must begin at the initial conception of development to ensure comprehensive software security, testing, and fast feedback on the main branch health. Furthermore, it empowers the ability of the team to hold to agile practices.  
+We believe CI is non-negotiable and must begin at the initial conception of development to ensure comprehensive software security, testing, and fast feedback on the main branch health. Furthermore, it empowers the ability of the team to hold to agile practices.
 
-**CI stages should include at a minimum**  
+**CI stages should include at a minimum**
 - linting
 - unit tests
 - static code analysis
 - dependency scans
 
-**Continuous Delivery**   
-We believe that any merge to main should be able to deploy to production and main should always be deployable. Merges should be self-contained and not dependant upon another branch.  
+**Continuous Delivery**
+We believe that any merge to main should be able to deploy to production and main should always be deployable. Merges should be self-contained and not dependant upon another branch.
 
 [TODO]: # "Expand the section on CI"
 
@@ -297,10 +298,10 @@ We believe that any merge to main should be able to deploy to production and mai
 Building testing into our products provides us the confidence that we need to quickly deliver new features without the fear of breaking our products. The test pyramid depicts the types of test we can author along with the general distribution.
 
 ### Unit
-The unit test is designed to test a small, singular component/function/method. Target the public methods of your classes, private and protected methods are part of the public unit. The tests are easy to author and maintain, fast to run. Unit Tests represent the largest portion of tests within the code.
+The unit test is designed to test a small, singular component/function/method. Target the public methods of your classes, private and protected methods are part of the public unit. The tests are easy to author and maintain, and are fast to run. Unit Tests represent the largest portion of tests within the code.
 
 ### Contract Testing
-TDD for microservice architecture, contracts are written on what will be consumed and then consumers and producers are tested against these contracts.  Eliminates the need for test environments that have all services running and at a specific version.
+TDD for microservice architecture contracts are written on what will be consumed and then consumers and producers are tested against these contracts.  Eliminates the need for test environments that have all services running and at a specific version.
 
 ### Integration
 The integration test is designed to test between components. A typical example might be integrating with a database or a provided REST service. Integration tests require that you stand up not only your product but also the components with which you integrate. For this reason, they require more time and effort than unit tests. They are often times the second most frequently used test.
