@@ -2,11 +2,30 @@ site_name: Engineering
 site_url: https://engineering.rise8.us
 nav:
   - Home: index.md
-  - Practice Playbook: practice-playbook.md
+  - General Practices: general-engineering/practice-playbook.md
+  - Platform Engineering:
+    - Methodology:
+      - platform-engineering/methodologies/general-best-practices.md
+      - Concepts:
+        - platform-engineering/methodologies/concepts/kubernetes-best-practices.md
+        - platform-engineering/methodologies/concepts/argocd-best-practices.md
+        - platform-engineering/methodologies/concepts/terraform-best-practices.md
+    - Practical Examples:
+      - platform-engineering/practicals/argocd-examples.md
+  - Software Engineering: 
+    - Methodology:
+      - software-engineering/methodologies/general-best-practices.md
+      - Concepts:
+        - software-engineering/methodologies/concepts/api-best-practices.md
+    - Practical Examples:
+      - software-engineering/practicals/create-api-example.md
   - Blog:
-    - blog/sample.md
-  - Company: https://rise8.us
+    - blog/gitops.md 
+    - blog/platform-wars.md
+    - blog/users.md
+  - Company: https://rise8.us 
 theme:
+  custom_dir: material/overrides
   name: material
   logo: logo-rise8.svg
   favicon: https://rise8.us/images/favicons/cropped-rise8-favicon-32x32.png
