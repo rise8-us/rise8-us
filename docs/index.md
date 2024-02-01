@@ -1,7 +1,4 @@
 ---
-hide:
-  - navigation
-  - toc
+title: Title
+template: home.html
 ---
-# Home
-Welcome to Engineering!
