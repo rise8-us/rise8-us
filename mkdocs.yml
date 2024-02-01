@@ -6,19 +6,17 @@ nav:
   - Platform Engineering:
     - Methodology:
       - platform-engineering/methodologies/general-best-practices.md
-      - Concepts:
-        - platform-engineering/methodologies/concepts/kubernetes-best-practices.md
-        - platform-engineering/methodologies/concepts/argocd-best-practices.md
-        - platform-engineering/methodologies/concepts/terraform-best-practices.md
+      # - Concepts:
+      #   - platform-engineering/methodologies/concepts/argocd-best-practices.md
     - Practical Examples:
       - platform-engineering/practicals/argocd-examples.md
-  - Software Engineering: 
-    - Methodology:
-      - software-engineering/methodologies/general-best-practices.md
-      - Concepts:
-        - software-engineering/methodologies/concepts/api-best-practices.md
-    - Practical Examples:
-      - software-engineering/practicals/create-api-example.md
+  # - Software Engineering: 
+  #   - Methodology:
+  #     - software-engineering/methodologies/general-best-practices.md
+  #     - Concepts:
+  #       - software-engineering/methodologies/concepts/api-best-practices.md
+  #   - Practical Examples:
+  #     - software-engineering/practicals/create-api-example.md
   - Blog:
     - blog/gitops.md 
     - blog/platform-wars.md
