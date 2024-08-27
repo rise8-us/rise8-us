@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Telegraf";
+  src: url("https://rise8.us/fonts/Telegraf-Regular.ttf") format("ttf");
+}
+
+:root {
+  --md-text-font: "Telegraf", sans-serif;
+}
+
+[dir=ltr] .md-header__title {
+  margin-left: 0;
+  font-size: 24px;
+}
